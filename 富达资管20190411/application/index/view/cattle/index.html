@@ -1,0 +1,115 @@
+{extend name="layouts/layout_manager" /}
+{block name="title"}大神{/block}
+{block name="style"}
+<link rel="stylesheet" type="text/css" href="__RESOURCE__/css/person.css">
+
+{/block}
+
+<!--个人中心-充值-支付宝-->
+{block name="body"}
+<body>
+{/block}
+{block name="content"}
+<div class="manager_con">
+    <header class="header_con">
+        <a href="{:url('index/User/index')}" class="lf">
+            <img src="__RESOURCE__/img/call_back.png">
+        </a>
+        <p>大神</p>
+    </header>
+    <div id="main">
+        <div class="index-box">
+            <a href="javascript:void(0)" class="client_profile clear_fl">
+                <div class="lf">
+                    <p class="client_p_name">{$userInfo.nickname | default=$userInfo.username}</p>
+                    <p class="client_p_phone">{$userInfo.mobile}</p>
+                </div>
+                <!--<i class="earrow earrow-right rt"></i>-->
+                <!--<span class="rt">分享二维码</span>-->
+            </a>
+
+            <a href="{:url('index/Cattle/myIncome')}" class="client_profile my_input_con clear_fl">
+                <p class="lf my_input">{$userInfo.income}</p>
+                <i class="earrow earrow-right rt"></i>
+                <span class="rt">我的收入</span>
+            </a>
+
+            <ul class="clear_fl manager_inpu">
+                <li>
+                    <p class="m_key">实时收入</p>
+                    <p class="m_value">{$userInfo.realtime_income}</p>
+                </li>
+                <li>
+                    <p class="m_key">未结收入</p>
+                    <p class="m_value">{$userInfo.not_income}</p>
+                </li>
+                <li class="border_bottom">
+                    <p class="m_key">可转收入</p>
+                    <p class="m_value clear_fl">
+                        <span>{$userInfo.sure_income}</span>
+                        <a href="javascript:remove_out();" class="rt">转出</a>
+                    </p>
+                </li>
+                <li class="border_bottom">
+                    <p class="m_key">已转收入</p>
+                    <p class="m_value">{$userInfo.already_income}</p>
+                </li>
+            </ul>
+
+            <div class="meun-box menuBox">
+                <div class="menu-wrap">
+
+                    <a href="{:url('index/Cattle/strategyEvening')}" style="display: block;">
+                        <div class="menu-item coverings boxflex" data-index="2">
+                            <i class="icon icon-coverings"></i>
+                            <span class="menu-itemTitle menu-cover">跟单平仓</span>
+                            <span class="box_flex_1 menu-itemNum">{$userInfo.evening | default=0}笔</span>
+                            <i class="earrow earrow-right"></i>
+                        </div>
+                    </a>
+                    <a href="{:url('index/Cattle/strategyPosition')}" style="display: block;">
+                        <div class="menu-item boxflex" data-index="3">
+                            <i class="icon icon-mycard"></i>
+                            <span class="menu-itemTitle menu-id">跟单持仓</span>
+                            <span class="box_flex_1 menu-itemNum"></span>
+                            <span class="box_flex_1 menu-itemNum">{$userInfo.position | default=0}笔</span>
+                            <i class="earrow earrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home__incomeTip___t5txi">*实际收入以交易日结算完成后为准</div>
+        </div>
+    </div>
+</div>
+{/block}
+{block name="nav"}{/block}
+{block name="script"}
+<script type="text/javascript" src="__RESOURCE__/lib/layer/layer.js"></script>
+<script>
+    function remove_out()
+    {
+        //询问框
+        layer.confirm('是否确认转出？', {
+            title:'提示',
+            btn: ['转出','取消'] //按钮
+        }, function(){
+            var _url = '{:url("index/Cattle/removeCapital")}',
+                _oData = {};
+            $ajaxCustom(_url, _oData, function(res){
+                if(res.state){
+                    layer.msg(res.info, {icon: 1});
+                    setTimeout(window.location.reload(), 2000);
+                }else{
+//                    $alert(res.info);
+                    layer.msg(res.info);
+                }
+            });
+
+        }, function(){
+            //取消了
+        });
+    }
+</script>
+{/block}

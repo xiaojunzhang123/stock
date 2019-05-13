@@ -1,0 +1,224 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<title>上传身份证</title>
+<link href="/resource/home/css/certpubli.css" rel="stylesheet" type="text/css">
+<link href="/resource/home/css/certstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<style>
+.header_con {
+    height: 50px;
+    line-height: 50px;
+    background: #F54B4B;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.header_con a {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    z-index: 1000;
+}
+.header_con p {
+    font-size: 16px;
+    color: #fff;
+}
+.header_con a img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+</style>
+<!-- ====================================loading -->
+<section id="loading"></section>
+<!-- ====================================页面开始 -->
+<!--登录-->
+<header class="header_con">
+		<a href="/user/home.html" class="lf">
+			<img src="/resource/home/img/call_back.png">
+		</a>
+		<p>身份证上传</p>
+	</header>
+ 
+</header>
+<section class="acc_apply" style="margin-top: 50px;">
+	<ul>
+		<li class="clearfix">
+			<label class="tl">姓名：</label>
+			<input autocomplete="off" placeholder="请输入您的姓名" id="name"class="" type="text" />
+		</li>
+		<li class="clearfix">
+			<label class="tl acc_five">身份证号码：</label>
+			<input autocomplete="off" placeholder="请输入您的身份证号码"id="num" class="" type="text" />
+		</li>
+		
+		<li class="clearfix" >
+			<label class="tl acc_four fl">证件照片：</label>
+		</li>
+		<li style="border-top: 0; margin-bottom: 60px;">
+			<div class="acc_img">
+				<div id="sss">
+					<img class="acc_imgin" src="/resource/home/img/zhengmian.png" id="img0">
+					<input type="file" style="/*position: absolute;opacity:0;width: 85%;height: 200px;top: 150px;*/float: left;"name="file0" id="file0" multiple value="上传正面"class="ph08" />
+					<input type="text" style="display: none" id="file00"value=""/>
+				</div>
+				 
+			</div>
+		</li>
+		<li style="border-top: 0; margin-bottom: 60px;">
+			<div class="acc_img">
+				<div id="sss">
+					<img class="acc_imgin" src="/resource/home/img/fanmian.png" id="img1">
+					<input type="file"style="/*position: absolute;opacity:0;width: 85%;height: 200px;top: 150px;*/float: left;" name="file1" id="file1" multiple value="上传反面"class="ph08" />
+					<input type="text" style="display: none" id="file11"value=""/>
+				</div>
+				 
+				<p class="ph09 ">注：身份证上的所有信息清晰可见，必须能看清证件号。照片需免冠，建议未化妆。手持证件人的五官清晰可见。照片内容真实有效。不得做任何修改。支持jpg、jpeg、bmp、gif格式照片。大小不超过5M</p>
+			</div>
+		</li>
+	</ul>
+</section>
+<footer class="acc_foot clearfix">
+	<a href="#" class="fl tc acc_cancel">取消</a>
+	<a href="#" class="fl tc acc_sure">提交</a>
+</footer>
+<!--弹出层-->
+<article id="tip">
+	<div class="pack">
+		<h1 class="tc">提交成功</h1>
+		<p class="tc"></p>
+		<a href="#">确定</a>
+	</div>
+</article>
+<!-- 网站要用到的一些类库 -->
+<script src="/resource/home/js/jquery1.8.3.min.js"></script>
+<script src="/resource/home/js/script.js"></script>
+<script type="text/javascript" src="__RESOURCE__/js/common.js"></script>
+<script type="text/javascript">
+
+	$(function() {
+		/*document.documentElement.style.fontSize=document.documentElement.clientWidth*12/320+'px';*/
+		$(window).on("load", function() {
+				$("#loading").fadeOut();
+			})
+			// ========================================浮层控制
+		$("#tip .pack a").on("click", function() {
+			$("#tip").fadeOut()
+			$("#tip .pack p").html("")
+			return false;
+		})
+
+		function alerths(str) {
+			$("#tip").fadeIn()
+			$("#tip .pack p").html(str)
+			return false;
+		}
+		$(".acc_sure").on("click", function() {
+            front_card=$("#img0").attr("src");
+            back_card=$("#img1").attr("src");
+            name=$("#name").val();
+            num=$("#num").val();
+            if($("#file00").val()!=1){
+             alerths("请上传身份证正面");
+			  return false;
+            }
+            if($("#file11").val()!=1){
+             alerths("请上传身份证反面");
+			  return false;
+            }
+            if(!num){
+             alerths("请输入身份证号码");
+			  return false;
+            }
+            if(!name){
+             alerths("请输入您的姓名");
+			  return false;
+            }
+            id={$id};
+            $.ajax({
+	            url: "{:url('index/User/cert_insert')}",
+	            type: "POST",
+	            data: {userid:id,
+	            	frontcard:front_card,
+	            	backcard:back_card,
+	            	realname:name,
+	            	cardnum:num},
+	            dataType: "json",
+	            success: function (resp) {
+	            	hideLoading();
+	                if(1 == resp.state){
+	                    alerths("请等待审核！");
+	                    $(".acc_foot").hide();
+	                }else{
+	                    $alert(resp.info);
+	                }
+	            },
+	            error: function () {
+	                $alert("上传失败！");
+	            }
+	        });
+			alerths("请等待审核！")
+			return false;
+		})
+		$("#file0").change(function() {
+			var _formData = new FormData();
+	        _formData.append("cert", document.getElementById("file0").files[0]);
+	        $.ajax({
+	            url: "{:url('index/User/cert_update')}",
+	            type: "POST",
+	            data: _formData,
+	            contentType: false,
+	            processData: false,
+	            success: function (resp) {
+	            	hideLoading();
+	                if(1 == resp.state){
+	                    $("#img0").attr("src", resp.data.avatar);
+	                    $("#file00").val(1);
+	                }else{
+	                    $alert(resp.info);
+	                }
+	            },
+	            error: function () {
+	                $alert("上传失败！");
+	            }
+	        });
+		});
+
+		$("#file1").change(function() {
+			var _formData = new FormData();
+	        _formData.append("cert", document.getElementById("file1").files[0]);
+	        $.ajax({
+	            url: "{:url('index/User/cert_update')}",
+	            type: "POST",
+	            data: _formData,
+	            contentType: false,
+	            processData: false,
+	            success: function (resp) {
+	            	hideLoading();
+	                if(1 == resp.state){
+	                    $("#img1").attr("src", resp.data.avatar);
+	                    $("#file11").val(1);
+	                }else{
+	                    $alert(resp.info);
+	                }
+	            },
+	            error: function () {
+	                $alert("上传失败！");
+	            }
+	        });
+		});
+		 
+	})
+</script>
+</div>
+</body>
+</html>

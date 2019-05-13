@@ -1,0 +1,78 @@
+{extend name="layouts/layout_iframe" /}
+
+{block name="title"}会员管理{/block}
+
+{block name="body"}
+<nav class="breadcrumb">
+    <i class="Hui-iconfont Hui-iconfont-home2"></i> 首页
+    <span class="c-gray en">&gt;</span> 实名认证
+    <span class="c-gray en">&gt;</span> 会员认证管理
+    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+        <i class="Hui-iconfont Hui-iconfont-huanyipi"></i>
+    </a>
+</nav>
+<div class="page-container">
+    
+    <div class="cl pd-5 bg-1 bk-gray mt-20">
+
+        <span class="r">共有数据：<strong>{$count}</strong> 条</span>
+    </div>
+    <table class="table table-border table-bordered table-hover table-bg">
+        <thead>
+        <tr class="text-c">
+            <th width="40">ID</th>
+            <th>姓名</th>
+			<th>手机号</th>
+            <th>身份证号码</th>
+            <th>身份证正面</th>
+            <th>身份证反面</th>
+            <th>状态</th>
+            <th width="100">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {empty name="mencert"}
+        <tr class="text-c admin-lists">
+            <td colspan="12">暂时没有匹配到数据</td>
+        </tr>
+        {/empty}
+        {volist name="mencert" id="item"}
+        <tr class="text-c admin-lists">
+            <td width="30">{$item.userid}</td>
+            <td>{$item.realname}</td>
+			<td>{$item.username}</td>
+            <td>{$item.cardnum}</td>
+            <td><a href="{$item.frontcard}" target="_blank"><img style="width: 400px;height: 200px;"src="{$item.frontcard}"/></a></td>
+			<td><a href="{$item.backcard}" target="_blank"><img style="width: 400px;height: 200px;" src="{$item.backcard}"/></a></td>
+            <td>
+			    {switch $item.status}
+					{case '0'}<span class="label label-success radius">待审核</span>{/case}
+					{case 1}<span class="label label-success radius">审核通过</span>{/case}
+					{case 2}<span class="label label-success radius"style="color:red">未审核通过</span>{/case}
+				{/switch} 
+            </td>
+            <td class="f-14"> 
+                <input class="btn btn-primary size-MINI radius" type="button" title="会员编辑" onclick="admin_edit('会员编辑','{:url("admin/User/certupdate", ['id' => $item.id])}','','500')" value="编辑">
+                
+            </td>
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+    {$page}
+</div>
+{/block}
+
+{block name="footer"}
+
+{/block}
+
+{block name="script"}
+<script>
+    
+    /*用户-编辑*/ 
+    function admin_edit(title,url,w,h){
+        layer_show(title,url,w,h);
+    } 
+</script>
+{/block}

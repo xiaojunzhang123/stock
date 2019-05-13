@@ -1,0 +1,96 @@
+﻿{extend name="layouts/layout_iframe" /}
+
+{block name="title"}产品列表{/block}
+
+{block name="body"}
+<nav class="breadcrumb">
+	<i class="Hui-iconfont Hui-iconfont-home2"></i> 首页
+	<span class="c-gray en">&gt;</span> 产品管理
+	<span class="c-gray en">&gt;</span> 产品列表
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+		<i class="Hui-iconfont Hui-iconfont-huanyipi"></i>
+	</a>
+</nav>
+<div class="page-container">
+	<div class="cl pd-5 bg-1 bk-gray">
+		<span class="l">
+			<a class="btn btn-primary radius" href="javascript:;" onclick="product_add('添加产品','{:url("admin/Product/add")}','', '510')">
+				<i class="Hui-iconfont Hui-iconfont-add"></i> 添加产品
+			</a> </span>
+		<span class="r">共有数据：<strong>{$data.total}</strong> 条</span>
+	</div>
+	<table class="table table-border table-bordered table-hover table-bg">
+		<thead>
+		<tr class="text-c">
+			<th width="25"><input type="checkbox" value="" name=""></th>
+			<th width="25">ID</th>
+			<th>产品名称</th>
+			<th>产品描述</th>
+			<th>允许交易</th>
+			<th>币种</th>
+			<th>上/下架</th>
+			<th>状态</th>
+			<th width="80">操作</th>
+		</tr>
+		</thead>
+		<tbody>
+		{volist name="data.data" id="item"}
+		<tr class="text-c">
+			<td width="25"><input type="checkbox" value="{$item.id}" name=""></td>
+			<td width="25">{$item.id}</td>
+			<td>{$item.name}</td>
+			<td>{$item.desc}</td>
+			<td>
+				{if condition="$item.is_trade.value eq 1"}
+				<span class="label label-success radius">{$item.is_trade.text}</span>
+				{else /}
+				<span class="label label-danger radius">{$item.is_trade.text}</span>
+				{/if}
+			</td>
+			<td>
+				<span class="label label-success radius">{$item.currency.text}</span>
+			</td>
+			<td>
+				{if condition="$item.on_sale.value eq 1"}
+				<span class="label label-success radius">{$item.on_sale.text}</span>
+				{else /}
+				<span class="label label-danger radius">{$item.on_sale.text}</span>
+				{/if}
+			</td>
+			<td>
+				{if condition="$item.state.value eq 1"}
+				<span class="label label-success radius">{$item.state.text}</span>
+				{else /}
+				<span class="label label-danger radius">{$item.state.text}</span>
+				{/if}
+			</td>
+			<td class="f-14">
+				<input class="btn btn-primary size-MINI radius" type="button" title="角色编辑" onclick="admin_role_edit('角色编辑','admin-role-add.html','1')" value="编辑">
+				<input class="btn btn-danger size-MINI radius" type="button" title="角色删除" onclick="admin_role_del(this,'1')" value="删除">
+			</td>
+		</tr>
+		{/volist}
+		</tbody>
+	</table>
+	{$pages}
+</div>
+{/block}
+
+{block name="footer"}
+<!--<footer class="footer mt-20">
+	<div class="container">
+		<p>感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch<br>
+			Copyright &copy;2015-2017 H-ui.admin v3.1 All Rights Reserved.<br>
+			本后台系统由<a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
+	</div>
+</footer>-->
+{/block}
+
+{block name="script"}
+<script>
+/*用户-添加*/
+function product_add(title,url,w,h){
+	layer_show(title,url,w,h);
+}
+</script>
+{/block}

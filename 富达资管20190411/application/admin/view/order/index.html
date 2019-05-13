@@ -1,0 +1,243 @@
+﻿{extend name="layouts/layout_iframe" /}
+
+{block name="title"}委托订单{/block}
+
+{block name="body"}
+<nav class="breadcrumb">
+	<i class="Hui-iconfont Hui-iconfont-home2"></i> 首页
+	<span class="c-gray en">&gt;</span> 订单管理
+	<span class="c-gray en">&gt;</span> 委托订单
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+		<i class="Hui-iconfont Hui-iconfont-huanyipi"></i>
+	</a>
+</nav>
+<div class="page-container">
+	<form action="" method="get">
+		<div class="text-l">
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="昵称" name="nickname" value="{$search.nickname|default=''}">
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="手机号" name="mobile" value="{$search.mobile|default=''}">
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="股票代码" name="code" value="{$search.code|default=''}">
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="股票名称" name="name" value="{$search.name|default=''}">
+		</div>
+		<div class="text-l mt-5">
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="微圈" name="ring" value="{$search.ring|default=''}">
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="微会员" name="member" value="{$search.member|default=''}">
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="经纪人" name="manager" value="{$search.manager|default=''}">
+		</div>
+		<div class="text-l mt-5">
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="委托开始时间" name="begin" value="{$search.begin|default=''}" onclick="WdatePicker({readOnly:true, dateFmt:'yyyy-MM-dd HH:mm'})"> -
+			<input type="text" class="input-text radius" style="width:170px;" placeholder="委托结束时间" name="end" value="{$search.end|default=''}" onclick="WdatePicker({readOnly:true, dateFmt:'yyyy-MM-dd HH:mm'})">
+			<button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont Hui-iconfont-search2"></i>搜索</button>
+		</div>
+	</form>
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+		<span class="l">
+		</span>
+		<span class="r">共有数据：<strong>{$datas.total}</strong> 条</span>
+	</div>
+	<table class="table table-border table-bordered table-hover table-bg">
+		<thead>
+		<tr class="text-c">
+			<th>策略ID</th>
+			<!--<th>类型</th>-->
+			<th>昵称</th>
+			<th>手机号</th>
+			<th>股票代码</th>
+			<th>股票名称</th>
+			<th>微会员</th>
+			<th>微圈</th>
+			<th>经纪人</th>
+			<th>买入价</th>
+			<th>卖出价</th>
+			<th>卖出手数</th>
+			<th>盈亏</th>
+			<th>委托时间</th>
+			<th width="160">操作</th>
+		</tr>
+		</thead>
+		<tbody>
+		{volist name="datas.data" id="item"}
+		<tr class="text-c mode-lists">
+			<td>{$item.order_id}</td>
+			<!--<td>{$item.state_text}</td>-->
+			<td>{$item.has_one_user.nickname|default=$item.has_one_user.username}</td>
+			<td>{$item.has_one_user.mobile}</td>
+			<td>{$item.code}</td>
+			<td>{$item.name}</td>
+			<td>{$item.has_one_user.has_one_admin.has_one_parent.username|default='无'}</td>
+			<td>{$item.has_one_user.has_one_admin.username|default='无'}</td>
+			<td>{$item.has_one_user.has_one_parent.username|default='无'}</td>
+			<td>{$item.price|number_format=2}</td>
+			<td>{$item.sell_price|number_format=2}</td>
+			<td>{$item.sell_hand|intval}</td>
+			<td>
+				{if condition="$item.profit LT 0"}
+				<font style="color: #1eb83f;">{$item.profit|number_format=2}</font>
+				{elseif condition="$item.profit EQ 0" /}
+				<font style="color: #CC0000;">{$item.profit|number_format=2}</font>
+				{else /}
+				<font style="color: #CC0000;">+{$item.profit|number_format=2}</font>
+				{/if}
+			</td>
+			<td>
+				{eq name="item.state" value="4"}
+				{$item.update_at|date="Y-m-d H:i", ###}
+				{else /}
+				{$item.create_at|date="Y-m-d H:i", ###}
+				{/eq}
+			</td>
+			<td>
+				{if condition="in_array('admin/Order/entrustDetail', $Think.session.ACCESS_LIST)"}
+				<input class="btn btn-secondary size-MINI radius" type="button" title="策略详情" onclick="show_detail('策略详情', '{:url("admin/Order/entrustDetail", ['id' => $item.order_id])}')" value="详情">
+				{/if}
+				{if condition="in_array('admin/Order/entrustRebate', $Think.session.ACCESS_LIST)"}
+				<input class="btn btn-primary size-MINI radius" type="button" title="返点记录" onclick="show_rebate('返点记录', '{:url("admin/Order/entrustRebate", ['id' => $item.order_id])}')" value="返点">
+				{/if}
+				{if condition="$item.state eq 1"}
+				{if condition="in_array('admin/Order/buyOk', $Think.session.ACCESS_LIST)"}
+				<input class="btn btn-success size-MINI radius" type="button" title="建仓成功" onclick="buy_ok({$item.order_id}, {$item.price}, this);" value="建仓">
+				{/if}
+				{if condition="in_array('admin/Order/buyFail', $Think.session.ACCESS_LIST)"}
+				<input class="btn btn-danger size-MINI radius" type="button" title="建仓失败" onclick="buy_fail({$item.order_id}, this);" value="撤销">
+				{/if}
+				{elseif condition="$item.state eq 4" /}
+				{if condition="in_array('admin/Order/sellOk', $Think.session.ACCESS_LIST)"}
+				<input class="btn btn-success size-MINI radius" type="button" title="平仓成功" onclick="sell_ok({$item.order_id}, this);" value="平仓">
+				{/if}
+				{if condition="in_array('admin/Order/sellFail', $Think.session.ACCESS_LIST)"}
+				<input class="btn btn-danger size-MINI radius" type="button" title="平仓失败" onclick="sell_fail({$item.order_id}, this);" value="撤销">
+				{/if}
+				{/if}
+			</td>
+		</tr>
+		{/volist}
+		</tbody>
+	</table>
+	{$pages}
+</div>
+{/block}
+
+{block name="footer"}
+
+{/block}
+
+{block name="script"}
+<script language="javascript" type="text/javascript" src="__RESOURCE__/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script>
+    {if condition="in_array('admin/Order/entrustDetail', $Think.session.ACCESS_LIST)"}
+    function show_detail(title,url){
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+	{/if}
+
+	{if condition="in_array('admin/Order/entrustRebate', $Think.session.ACCESS_LIST)"}
+	function show_rebate(title,url){
+		var index = layer.open({
+			type: 2,
+			title: title,
+			content: url
+		});
+		layer.full(index);
+	}
+	{/if}
+	/*function buy_ok(_id, _price, _obj)
+	{
+        parent.layer.confirm('确认此订单建仓成功？',function(index){
+            parent.layer.close(index);
+            layer.prompt({
+                title: '实际买入价',
+                value: _price,
+                formType: 0,
+            }, function(_number, _prompt){
+                layer.close(_prompt);
+                var _oData = {id : _id, price : _number},
+                    _url = '{:url("admin/Order/buyOk")}',
+                    _loading = parent.layer.load(1),
+                    _func = function (_resp) {
+                        parent.layer.close(_loading);
+                        if (!_resp.state) {
+                            layer.msg(_resp.info);
+                        } else {
+                            layer.msg('操作成功！', {time: 500}, function(){
+                                $(_obj).parents("tr").remove();
+                            });
+                        }
+                    };
+                _ajaxPost(_url, _oData, _func);
+            });
+        });
+	}*/
+
+    /*function buy_fail(_id, _obj)
+    {
+        parent.layer.confirm('确认此订单建仓失败？',function(index){
+            parent.layer.close(index);
+            var _oData = {id : _id},
+                _url = '{:url("admin/Order/buyFail")}',
+                _loading = parent.layer.load(1),
+                _func = function (_resp) {
+                    parent.layer.close(_loading);
+                    if (!_resp.state) {
+                        layer.msg(_resp.info);
+                    } else {
+                        layer.msg('操作成功！', {time: 500}, function(){
+                            $(_obj).parents("tr").remove();
+                        });
+                    }
+                };
+            _ajaxPost(_url, _oData, _func);
+        });
+    }*/
+
+	{if condition="in_array('admin/Order/sellOk', $Think.session.ACCESS_LIST)"}
+    function sell_ok(_id, _obj)
+    {
+        parent.layer.confirm('确认此订单平仓成功？',function(index){
+            parent.layer.close(index);
+            var _oData = {id : _id},
+                _url = '{:url("admin/Order/sellOk")}',
+                _loading = parent.layer.load(1),
+                _func = function (_resp) {
+                    parent.layer.close(_loading);
+                    if (!_resp.state) {
+                        layer.msg(_resp.info);
+                    } else {
+                        layer.msg('操作成功！', {time: 500}, function(){
+                            $(_obj).parents("tr").remove();
+                        });
+                    }
+                };
+            _ajaxPost(_url, _oData, _func);
+        });
+    }
+	{/if}
+
+	{if condition="in_array('admin/Order/sellFail', $Think.session.ACCESS_LIST)"}
+    function sell_fail(_id, _obj)
+    {
+        parent.layer.confirm('确认此订单平仓失败？',function(index){
+            parent.layer.close(index);
+            var _oData = {id : _id},
+                _url = '{:url("admin/Order/sellFail")}',
+                _loading = parent.layer.load(1),
+                _func = function (_resp) {
+                    parent.layer.close(_loading);
+                    if (!_resp.state) {
+                        layer.msg(_resp.info);
+                    } else {
+                        layer.msg('操作成功！', {time: 500}, function(){
+                            $(_obj).parents("tr").remove();
+                        });
+                    }
+                };
+            _ajaxPost(_url, _oData, _func);
+        });
+    }
+	{/if}
+</script>
+{/block}

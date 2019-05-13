@@ -1,0 +1,416 @@
+
+2019-03-01 13:37:00  回调信息：{"amount":"165.00","appid":"39838201","out_trade_no":"20190301133534","pay_id":"QWJ_QUICK","pay_no":"QDD201903011335177111","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"162.36","version":"1.1","sign":"ec592a4ffcca4d3eeae11b7d4976a083"} 
+
+2019-03-01 13:41:06  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"20190301133929","pay_id":"QWJ_QUICK","pay_no":"QDD201903011339125011","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"e27142be7078094116069176ebbd9f7d"} 
+
+2019-03-01 13:58:54  回调信息：{"amount":"154.00","appid":"39838201","out_trade_no":"20190301135800","pay_id":"QWJ_QUICK","pay_no":"QDD201903011357433497","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"151.53","version":"1.1","sign":"c5d94d79156bd545dbb3a005ec047b4f"} 
+
+2019-03-04 09:26:56  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"20190304092508","pay_id":"QWJ_QUICK","pay_no":"QDD201903040924464167","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"d966e9a305ec4ad31126455855de865f"} 
+
+2019-03-04 13:22:25  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190304131911","pay_id":"QWJ_QUICK","pay_no":"QDD201903041318477486","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"047e95707afd099970ba5e969568662a"} 
+
+2019-03-04 13:24:21  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190304132331","pay_id":"QWJ_QUICK","pay_no":"QDD201903041323073677","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"f2a92b25c6477a870d332d7395cc45f8"} 
+
+2019-03-04 13:30:19  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190304132942","pay_id":"QWJ_QUICK","pay_no":"QDD201903041329183626","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"7aa3b44db31463aa9551cc08a7b6bda7"} 
+
+2019-03-04 13:33:37  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190304133307","pay_id":"QWJ_QUICK","pay_no":"QDD201903041332437918","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"c48edf36b65a5ad85c24b5534d0466f9"} 
+
+2019-03-05 09:54:53  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305095222","pay_id":"QWJ_QUICK","pay_no":"QDD201903050951565720","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"f0e236045372ced2f6fe3aac49eb0de7"} 
+
+2019-03-05 10:01:21  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305100033","pay_id":"QWJ_QUICK","pay_no":"QDD201903051000077061","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"630cfcdd1982fed1b86a48409149814f"} 
+
+2019-03-05 10:02:34  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305100152","pay_id":"QWJ_QUICK","pay_no":"QDD201903051001265731","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"5fb2ee1a63cfd7e51688541d6aa9ae4a"} 
+
+2019-03-05 10:03:35  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305100308","pay_id":"QWJ_QUICK","pay_no":"QDD201903051002417414","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"b1a3796bf34ba430e82af094d5a99dfc"} 
+
+2019-03-05 14:03:02  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305140223","pay_id":"QWJ_QUICK","pay_no":"QDD201903051401588249","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"d2a44763beca7cdce823c6416c13f44e"} 
+
+2019-03-05 14:04:44  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305140410","pay_id":"QWJ_QUICK","pay_no":"QDD201903051403455985","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"99c76d7538b5f55609024b74828c8952"} 
+
+2019-03-05 14:07:12  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305140639","pay_id":"QWJ_QUICK","pay_no":"QDD201903051406131720","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"4ad56f1a56e350579096594f904c27ff"} 
+
+2019-03-05 14:07:33  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305140529","pay_id":"QWJ_QUICK","pay_no":"QDD201903051405035914","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"2ee70686c8fbb9f2748320c92b38d504"} 
+
+2019-03-05 14:14:29  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190305141325","pay_id":"QWJ_QUICK","pay_no":"QDD201903051412597141","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"e8c9efefd2c3ab0d3886c78b2e0c8443"} 
+
+2019-03-05 16:20:19  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"20190305161850","pay_id":"QWJ_QUICK","pay_no":"QDD201903051618251918","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"181f3d172b7fc4d3cbaab11d9cf350f4"} 
+
+2019-03-05 16:24:49  回调信息：{"amount":"4391.00","appid":"39838201","out_trade_no":"20190305162210","pay_id":"QWJ_QUICK","pay_no":"QDD201903051621459196","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4320.74","version":"1.1","sign":"097c4232224f8b7135e5c1856e10eec0"} 
+
+2019-03-06 05:25:28  回调信息：{"amount":"4396.00","appid":"39838201","out_trade_no":"20190306052413","pay_id":"QWJ_QUICK","pay_no":"QDD201903060523473178","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4325.66","version":"1.1","sign":"5a714f26871233a5b220b8e90374bc32"} 
+
+2019-03-06 09:14:09  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306091330","pay_id":"QWJ_QUICK","pay_no":"QDD201903060913034884","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"7473ab5e8af7041bde004eb865a4b1ac"} 
+
+2019-03-06 09:17:09  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306091628","pay_id":"QWJ_QUICK","pay_no":"QDD201903060916021386","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"dbac1074ca324f3ceeae5ea7a5ca2fa1"} 
+
+2019-03-06 09:25:51  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306092423","pay_id":"QWJ_QUICK","pay_no":"QDD201903060923568083","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"41227ba639fd03d00d4a5dbf19d8447a"} 
+
+2019-03-06 09:30:31  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"20190306091502","pay_id":"QWJ_QUICK","pay_no":"QDD201903060914367622","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"8fb9e478fa9f6ab6144e7f76e34c3fa8"} 
+
+2019-03-06 09:46:26  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306094545","pay_id":"QWJ_QUICK","pay_no":"QDD201903060945184435","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"2a1c6828f272ed6bf41a08b9e0fe7f77"} 
+
+2019-03-06 10:02:34  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306100151","pay_id":"QWJ_QUICK","pay_no":"QDD201903061001249473","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"56be007e3e29303828857d47eeb07044"} 
+
+2019-03-06 10:32:28  回调信息：{"amount":"1500.00","appid":"39838201","out_trade_no":"20190306102741","pay_id":"QWJ_QUICK","pay_no":"QDD201903061027134457","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1476.00","version":"1.1","sign":"f9fa4f2fce3510cfc4f5ac3f10d521e0"} 
+
+2019-03-06 10:49:28  回调信息：{"amount":"4396.00","appid":"39838201","out_trade_no":"20190306104444","pay_id":"QWJ_QUICK","pay_no":"QDD201903061044155268","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4325.66","version":"1.1","sign":"8066141211c44eaa2923f03bcb99db5e"} 
+
+2019-03-06 11:04:12  回调信息：{"amount":"4402.00","appid":"39838201","out_trade_no":"20190306105117","pay_id":"QWJ_QUICK","pay_no":"QDD201903061050481179","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4331.56","version":"1.1","sign":"7a2c0c936d6d90c61295699e9f4bbea9"} 
+
+2019-03-06 11:05:27  回调信息：{"amount":"4400.00","appid":"39838201","out_trade_no":"20190306110453","pay_id":"QWJ_QUICK","pay_no":"QDD201903061104255420","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4329.60","version":"1.1","sign":"4486ec7759d5fe8de5815706cc737db1"} 
+
+2019-03-06 11:06:33  回调信息：{"amount":"4404.00","appid":"39838201","out_trade_no":"20190306110603","pay_id":"QWJ_QUICK","pay_no":"QDD201903061105344120","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4333.53","version":"1.1","sign":"52fac12259f5f5e611e1949493e14a84"} 
+
+2019-03-06 11:25:56  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306112256","pay_id":"QWJ_QUICK","pay_no":"QDD201903061122271621","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"6fa8d180155269f48fb107cd3fc62945"} 
+
+2019-03-06 11:28:22  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306112727","pay_id":"QWJ_QUICK","pay_no":"QDD201903061126581263","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"effe38f443a1913cb3aab1f16b053f92"} 
+
+2019-03-06 11:31:15  回调信息：{"amount":"600.00","appid":"39838201","out_trade_no":"20190306112930","pay_id":"QWJ_QUICK","pay_no":"QDD201903061129023789","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"590.40","version":"1.1","sign":"82adbebb9449af68459f29c13174c1fc"} 
+
+2019-03-06 13:17:53  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306131610","pay_id":"QWJ_QUICK","pay_no":"QDD201903061315437192","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"b46820eb6af075353cc1c85d838a14d5"} 
+
+2019-03-06 13:33:04  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306133217","pay_id":"QWJ_QUICK","pay_no":"QDD201903061331502430","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"0a0c2288c5412c0a3e93bb96038b9a5f"} 
+
+2019-03-06 14:12:52  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306141104","pay_id":"QWJ_QUICK","pay_no":"QDD201903061410372795","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"36ba32f87bbb070e4857e5b3cee5bcdc"} 
+
+2019-03-06 14:30:03  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306142928","pay_id":"QWJ_QUICK","pay_no":"QDD201903061429001864","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"7da0b5849f3f82e5e9137883c8b52053"} 
+
+2019-03-06 14:33:49  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306143311","pay_id":"QWJ_QUICK","pay_no":"QDD201903061432438574","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"3245d16cd5251027e91c7b469f0fa0d8"} 
+
+2019-03-06 14:36:17  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306143422","pay_id":"QWJ_QUICK","pay_no":"QDD201903061433549216","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"2790e8653df39bdac89b468ca580c0ca"} 
+
+2019-03-06 14:41:41  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190306144105","pay_id":"QWJ_QUICK","pay_no":"QDD201903061440374201","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"9583ea5534b57c53be32e0983cae3b30"} 
+
+2019-03-07 05:49:33  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"20190307054843","pay_id":"2090","pay_no":"QDD201903070548152872","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2940.00","version":"1.1","sign":"f7379d77638f8ebac83e014d5ca870f0"} 
+
+2019-03-07 05:53:02  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"20190307055206","pay_id":"2090","pay_no":"QDD201903070551381261","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2940.00","version":"1.1","sign":"b3a62b4c7265110f4e09a2c6cd75849e"} 
+
+2019-03-07 05:55:37  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"20190307055500","pay_id":"2090","pay_no":"QDD201903070554325084","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2940.00","version":"1.1","sign":"054e036f9d1de9589805975fe388f41d"} 
+
+2019-03-07 06:06:22  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"20190307060537","pay_id":"2090","pay_no":"QDD201903070605097768","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"980.00","version":"1.1","sign":"44cdc5c3ba7cdf2dcd9f004cce6fd261"} 
+
+2019-03-07 06:11:26  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"20190307061051","pay_id":"2090","pay_no":"QDD201903070610238722","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"980.00","version":"1.1","sign":"663138bd18bcad4b17a9de32dd681ca9"} 
+
+2019-03-07 06:13:01  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"20190307061229","pay_id":"2090","pay_no":"QDD201903070612014810","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"980.00","version":"1.1","sign":"efd3fbe7f32efd96ba445c44f9f86278"} 
+
+2019-03-07 06:27:51  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"20190307062549","pay_id":"2090","pay_no":"QDD201903070625201594","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2940.00","version":"1.1","sign":"2dc3043cb8ae94aa2d62feff163b0554"} 
+
+2019-03-07 06:39:44  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"20190307063859","pay_id":"2090","pay_no":"QDD201903070638311027","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2940.00","version":"1.1","sign":"dc3c03254c4157d0312f4b48b4c8790d"} 
+
+2019-03-07 06:54:15  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"20190307065340","pay_id":"2090","pay_no":"QDD201903070653123717","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1960.00","version":"1.1","sign":"12efba132e0afe1ecd512c3749a1bb86"} 
+
+2019-03-07 09:23:23  回调信息：{"amount":"2800.00","appid":"39838201","out_trade_no":"20190307092217","pay_id":"2090","pay_no":"QDD201903070921501961","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2744.00","version":"1.1","sign":"8599ae3c8c7fdbf42e7aafa5aaf77dfd"} 
+
+2019-03-08 10:19:28  回调信息：{"amount":"3500.00","appid":"39838201","out_trade_no":"20190308101702","pay_id":"2090","pay_no":"QDD201903081016276951","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"3430.00","version":"1.1","sign":"be217326ae5c775ed74cf4f9723ebe24"} 
+
+2019-03-08 13:47:38  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"20190308134644","pay_id":"QWJ_QUICK","pay_no":"QDD201903081346035566","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2952.00","version":"1.1","sign":"92d5face8b5cb664987454e20b203fca"} 
+
+2019-03-08 13:50:47  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"20190308134951","pay_id":"QWJ_QUICK","pay_no":"QDD201903081349109139","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2952.00","version":"1.1","sign":"3dbbbad0eac75f57cc011eacfd3cf1c2"} 
+
+2019-03-08 13:53:33  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"20190308135235","pay_id":"QWJ_QUICK","pay_no":"QDD201903081351542207","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"984.00","version":"1.1","sign":"c04cd089bfab25dc869b1e64945affce"} 
+
+2019-03-08 14:21:22  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"20190308142028","pay_id":"QWJ_QUICK","pay_no":"QDD201903081419455946","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"3cdcac627cf9e1efc9ca1c296446149b"} 
+
+2019-03-08 14:36:39  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"20190308143538","pay_id":"QWJ_QUICK","pay_no":"QDD201903081434554042","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"987f818b80eed8b11fbc014ed95b9e6a"} 
+
+2019-03-09 14:57:26  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190309145518","pay_id":"QWJ_QUICK","pay_no":"QDD201903091454352765","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"96cfcf4c96622d39f1c1a4cc6eb5192a"} 
+
+2019-03-09 15:07:02  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"20190309150604","pay_id":"QWJ_QUICK","pay_no":"QDD201903091505209375","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"de2bfdbc7105275991da288f99f47c8a"} 
+
+2019-03-11 06:58:04  回调信息：{"amount":"50.00","appid":"39838201","out_trade_no":"20190311065720","pay_id":"QWJ_QUICK","pay_no":"QDD201903110656398207","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"49.20","version":"1.1","sign":"bbf5a6d22e70afaffd6e80fa4e3c1da9"} 
+
+2019-03-11 15:57:00  回调信息：{"amount":"74.00","appid":"39838201","out_trade_no":"20190311155624","pay_id":"QWJ_QUICK","pay_no":"QDD201903111555328173","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"72.81","version":"1.1","sign":"0c2bbc835c4fa2c5040c95aa49d90003"} 
+
+2019-03-12 09:19:16  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"20190312091743","pay_id":"QWJ_QUICK","pay_no":"QDD201903120916367377","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"984.00","version":"1.1","sign":"3f6137000eed6efcdc4cd08ce8b1a94a"} 
+
+2019-03-12 09:22:46  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"20190312092133","pay_id":"QWJ_QUICK","pay_no":"QDD201903120920266492","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"984.00","version":"1.1","sign":"63d86a24f2b6b4ac4225c207d5dd7997"} 
+
+2019-03-12 13:53:04  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"c20190312135212","pay_id":"QWJ_QUICK","pay_no":"QDD201903121350528937","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"a02645b549b625910639cbd2ba82cf70"} 
+
+2019-03-12 13:54:59  回调信息：{"orderid":"c20190312135442","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031213535964747645","completiontime":"2019\/03\/12 13:54:16","attach":"c20190312135442","msg":"","sign":"99864dfb3f46e7752c6d0e2dfdea4977"} 
+
+2019-03-12 13:54:59  回调信息：{"orderid":"c20190312135442","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031213535964747645","completiontime":"2019\/03\/12 13:54:16","attach":"c20190312135442","msg":"","sign":"99864dfb3f46e7752c6d0e2dfdea4977"} 
+
+2019-03-12 13:54:59  回调信息：{"orderid":"c20190312135442","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031213535964747645","completiontime":"2019\/03\/12 13:54:16","attach":"c20190312135442","msg":"","sign":"99864dfb3f46e7752c6d0e2dfdea4977"} 
+
+2019-03-12 13:54:59  回调信息：{"orderid":"c20190312135442","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031213535964747645","completiontime":"2019\/03\/12 13:54:16","attach":"c20190312135442","msg":"","sign":"99864dfb3f46e7752c6d0e2dfdea4977"} 
+
+2019-03-12 13:56:19  回调信息：{"orderid":"c20190312135600","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031213551802255026","completiontime":"2019\/03\/12 13:55:36","attach":"c20190312135600","msg":"","sign":"f8fd4ce32b2b74bd11a44e2fe8ac1f7b"} 
+
+2019-03-12 13:56:19  回调信息：{"orderid":"c20190312135600","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031213551802255026","completiontime":"2019\/03\/12 13:55:36","attach":"c20190312135600","msg":"","sign":"f8fd4ce32b2b74bd11a44e2fe8ac1f7b"} 
+
+2019-03-12 13:56:19  回调信息：{"orderid":"c20190312135600","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031213551802255026","completiontime":"2019\/03\/12 13:55:36","attach":"c20190312135600","msg":"","sign":"f8fd4ce32b2b74bd11a44e2fe8ac1f7b"} 
+
+2019-03-12 13:56:19  回调信息：{"orderid":"c20190312135600","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031213551802255026","completiontime":"2019\/03\/12 13:55:36","attach":"c20190312135600","msg":"","sign":"f8fd4ce32b2b74bd11a44e2fe8ac1f7b"} 
+
+2019-03-12 14:06:48  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190312140100","pay_id":"QWJ_QUICK","pay_no":"QDD201903121359382457","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"5577a9a00644f8d392d62ddae0b8d9f8"} 
+
+2019-03-12 14:16:18  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190312141507","pay_id":"QWJ_QUICK","pay_no":"QDD201903121413457832","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"77653db6eec5f81b08cc1e610c6d19a4"} 
+
+2019-03-12 14:18:00  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190312141646","pay_id":"QWJ_QUICK","pay_no":"QDD201903121415246632","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"dc923569fed0cd2fe4e9525563387f62"} 
+
+2019-03-12 14:20:15  回调信息：{"orderid":"c20190312141954","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031214190997982107","completiontime":"2019\/03\/12 14:19:30","attach":"c20190312141954","msg":"","sign":"77c6ef685a0b7ef065700979b54a5092"} 
+
+2019-03-12 14:20:15  回调信息：{"orderid":"c20190312141954","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031214190997982107","completiontime":"2019\/03\/12 14:19:30","attach":"c20190312141954","msg":"","sign":"77c6ef685a0b7ef065700979b54a5092"} 
+
+2019-03-12 14:20:15  回调信息：{"orderid":"c20190312141954","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031214190997982107","completiontime":"2019\/03\/12 14:19:30","attach":"c20190312141954","msg":"","sign":"77c6ef685a0b7ef065700979b54a5092"} 
+
+2019-03-12 14:20:15  回调信息：{"orderid":"c20190312141954","opstate":"0","ovalue":"0.01","orderamt":"0.01","sysorderid":"19031214190997982107","completiontime":"2019\/03\/12 14:19:30","attach":"c20190312141954","msg":"","sign":"77c6ef685a0b7ef065700979b54a5092"} 
+
+2019-03-12 14:20:17  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190312141858","pay_id":"QWJ_QUICK","pay_no":"QDD201903121417363250","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"062660ffcf27780c837a3878c30246cf"} 
+
+2019-03-12 14:22:13  回调信息：{"orderid":"c20190312142200","opstate":"0","ovalue":"50.00","orderamt":"50.00","sysorderid":"19031214211639101385","completiontime":"2019\/03\/12 14:21:28","attach":"c20190312142200","msg":"","sign":"e596f671cc74afc7ffbd2d5cf3fa9274"} 
+
+2019-03-12 14:22:13  回调信息：{"orderid":"c20190312142200","opstate":"0","ovalue":"50.00","orderamt":"50.00","sysorderid":"19031214211639101385","completiontime":"2019\/03\/12 14:21:28","attach":"c20190312142200","msg":"","sign":"e596f671cc74afc7ffbd2d5cf3fa9274"} 
+
+2019-03-12 14:22:13  回调信息：{"orderid":"c20190312142200","opstate":"0","ovalue":"50.00","orderamt":"50.00","sysorderid":"19031214211639101385","completiontime":"2019\/03\/12 14:21:28","attach":"c20190312142200","msg":"","sign":"e596f671cc74afc7ffbd2d5cf3fa9274"} 
+
+2019-03-12 14:22:13  回调信息：{"orderid":"c20190312142200","opstate":"0","ovalue":"50.00","orderamt":"50.00","sysorderid":"19031214211639101385","completiontime":"2019\/03\/12 14:21:28","attach":"c20190312142200","msg":"","sign":"e596f671cc74afc7ffbd2d5cf3fa9274"} 
+
+2019-03-12 14:23:41  回调信息：{"orderid":"c20190312142329","opstate":"0","ovalue":"10.00","orderamt":"10.00","sysorderid":"19031214224536956437","completiontime":"2019\/03\/12 14:22:56","attach":"c20190312142329","msg":"","sign":"aaa20e39b3e6ff7438feca8670d721a0"} 
+
+2019-03-12 14:23:41  回调信息：{"orderid":"c20190312142329","opstate":"0","ovalue":"10.00","orderamt":"10.00","sysorderid":"19031214224536956437","completiontime":"2019\/03\/12 14:22:56","attach":"c20190312142329","msg":"","sign":"aaa20e39b3e6ff7438feca8670d721a0"} 
+
+2019-03-12 14:23:41  回调信息：{"orderid":"c20190312142329","opstate":"0","ovalue":"10.00","orderamt":"10.00","sysorderid":"19031214224536956437","completiontime":"2019\/03\/12 14:22:56","attach":"c20190312142329","msg":"","sign":"aaa20e39b3e6ff7438feca8670d721a0"} 
+
+2019-03-12 14:23:41  回调信息：{"orderid":"c20190312142329","opstate":"0","ovalue":"10.00","orderamt":"10.00","sysorderid":"19031214224536956437","completiontime":"2019\/03\/12 14:22:56","attach":"c20190312142329","msg":"","sign":"aaa20e39b3e6ff7438feca8670d721a0"} 
+
+2019-03-12 14:26:27  回调信息：{"orderid":"c20190312142614","opstate":"0","ovalue":"1.00","orderamt":"1.00","sysorderid":"19031214252961990544","completiontime":"2019\/03\/12 14:25:42","attach":"c20190312142614","msg":"","sign":"f23d807362824c1c7abfe85ab8f05f4e"} 
+
+2019-03-12 14:26:27  回调信息：{"orderid":"c20190312142614","opstate":"0","ovalue":"1.00","orderamt":"1.00","sysorderid":"19031214252961990544","completiontime":"2019\/03\/12 14:25:42","attach":"c20190312142614","msg":"","sign":"f23d807362824c1c7abfe85ab8f05f4e"} 
+
+2019-03-12 14:26:27  回调信息：{"orderid":"c20190312142614","opstate":"0","ovalue":"1.00","orderamt":"1.00","sysorderid":"19031214252961990544","completiontime":"2019\/03\/12 14:25:42","attach":"c20190312142614","msg":"","sign":"f23d807362824c1c7abfe85ab8f05f4e"} 
+
+2019-03-12 14:26:27  回调信息：{"orderid":"c20190312142614","opstate":"0","ovalue":"1.00","orderamt":"1.00","sysorderid":"19031214252961990544","completiontime":"2019\/03\/12 14:25:42","attach":"c20190312142614","msg":"","sign":"f23d807362824c1c7abfe85ab8f05f4e"} 
+
+2019-03-12 14:26:28  回调信息：{"orderid":"c20190312142612","opstate":"0","ovalue":"1.00","orderamt":"1.00","sysorderid":"19031214252790707267","completiontime":"2019\/03\/12 14:25:43","attach":"c20190312142612","msg":"","sign":"64d163594c6f45b397cce080061ca19d"} 
+
+2019-03-12 14:26:28  回调信息：{"orderid":"c20190312142612","opstate":"0","ovalue":"1.00","orderamt":"1.00","sysorderid":"19031214252790707267","completiontime":"2019\/03\/12 14:25:43","attach":"c20190312142612","msg":"","sign":"64d163594c6f45b397cce080061ca19d"} 
+
+2019-03-12 14:26:28  回调信息：{"orderid":"c20190312142612","opstate":"0","ovalue":"1.00","orderamt":"1.00","sysorderid":"19031214252790707267","completiontime":"2019\/03\/12 14:25:43","attach":"c20190312142612","msg":"","sign":"64d163594c6f45b397cce080061ca19d"} 
+
+2019-03-12 14:26:28  回调信息：{"orderid":"c20190312142612","opstate":"0","ovalue":"1.00","orderamt":"1.00","sysorderid":"19031214252790707267","completiontime":"2019\/03\/12 14:25:43","attach":"c20190312142612","msg":"","sign":"64d163594c6f45b397cce080061ca19d"} 
+
+2019-03-12 14:34:58  回调信息：{"amount":"4000.00","appid":"39838201","out_trade_no":"c20190312143338","pay_id":"QWJ_QUICK","pay_no":"QDD201903121432146473","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"3936.00","version":"1.1","sign":"b8c7523c14d37b4892594d4f4da37440"} 
+
+2019-03-12 16:09:22  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"c20190312160729","pay_id":"QWJ_QUICK","pay_no":"QDD201903121606014165","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2952.00","version":"1.1","sign":"4601e643c0e52824895dc25668f3709f"} 
+
+2019-03-12 16:11:42  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"c20190312161040","pay_id":"QWJ_QUICK","pay_no":"QDD201903121609111720","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2952.00","version":"1.1","sign":"e44154cdee66d6d03c207ddf854f2d17"} 
+
+2019-03-12 16:15:32  回调信息：{"amount":"3500.00","appid":"39838201","out_trade_no":"c20190312161434","pay_id":"QWJ_QUICK","pay_no":"QDD201903121613051077","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"3444.00","version":"1.1","sign":"a91c35efc2eacb83e732baa1d6f3219f"} 
+
+2019-03-12 18:29:52  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190312182753","pay_id":"QWJ_QUICK","pay_no":"QDD201903121827181090","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"4d5421ad45c66b870ba69fce25310ccc"} 
+
+2019-03-12 18:35:27  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190312183356","pay_id":"QWJ_QUICK","pay_no":"QDD201903121833208048","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"ed9c9cc2b94e55ca07e587257662f839"} 
+
+2019-03-13 08:15:23  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190313080516","pay_id":"QWJ_QUICK","pay_no":"QDD201903130803499802","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"596650a9ea69a209eb102a9477eba479"} 
+
+2019-03-13 10:35:49  回调信息：{"amount":"50.00","appid":"39838201","out_trade_no":"c20190313103456","pay_id":"QWJ_QUICK","pay_no":"QDD201903131034138848","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"49.20","version":"1.1","sign":"0791201dd66da981dea9e6d29c485ca7"} 
+
+2019-03-13 12:57:23  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"c20190313125605","pay_id":"QWJ_QUICK","pay_no":"QDD201903131255124106","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"984.00","version":"1.1","sign":"c2793f21480379444fb8fce176933a30"} 
+
+2019-03-13 14:22:43  回调信息：{"amount":"200.00","appid":"39838201","out_trade_no":"c20190313142111","pay_id":"QWJ_QUICK","pay_no":"QDD201903131420146634","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"196.80","version":"1.1","sign":"cc1dbf4bbfaca7c02b218a4a1b891016"} 
+
+2019-03-14 08:57:50  回调信息：{"amount":"550.00","appid":"39838201","out_trade_no":"c20190314085706","pay_id":"QWJ_QUICK","pay_no":"QDD201903140856165647","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"541.20","version":"1.1","sign":"9bddf89f52157c4387473ffbabd03671"} 
+
+2019-03-14 10:57:45  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190314105632","pay_id":"QWJ_QUICK","pay_no":"QDD201903141055313681","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"7de040f8b30ae19796530a6f71310b31"} 
+
+2019-03-14 12:32:41  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"c20190314123134","pay_id":"QWJ_QUICK","pay_no":"QDD201903141230233114","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"984.00","version":"1.1","sign":"642a460734260f30212082743a7aca30"} 
+
+2019-03-14 12:36:04  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190314123508","pay_id":"QWJ_QUICK","pay_no":"QDD201903141233575026","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"2ba79445fb580b3ad34ddddf286624b7"} 
+
+2019-03-14 12:44:38  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190314124401","pay_id":"QWJ_QUICK","pay_no":"QDD201903141242492175","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"87cfab1d3626504af3c9d995df7cf55f"} 
+
+2019-03-14 13:22:53  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190314132151","pay_id":"QWJ_QUICK","pay_no":"QDD201903141320363046","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"fad5cef55f4849d6e397a257d622b8e1"} 
+
+2019-03-14 13:42:24  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190314134018","pay_id":"QWJ_QUICK","pay_no":"QDD201903141339037500","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"6cd64401e4118a0025eba9821c244cfa"} 
+
+2019-03-14 13:55:10  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"c20190314134946","pay_id":"QWJ_QUICK","pay_no":"QDD201903141348301510","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"984.00","version":"1.1","sign":"758cdecf1713dcfe73c10211a692b547"} 
+
+2019-03-14 14:42:20  回调信息：{"amount":"2800.00","appid":"39838201","out_trade_no":"c20190314144059","pay_id":"QWJ_QUICK","pay_no":"QDD201903141439394942","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2755.20","version":"1.1","sign":"0c5c19f3ef95e5208494d8973952fd3d"} 
+
+2019-03-15 09:30:48  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190315092941","pay_id":"QWJ_QUICK","pay_no":"QDD201903150929019115","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"76582d3796f6aa0f21782224ebc42d11"} 
+
+2019-03-15 09:47:34  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190315094459","pay_id":"QWJ_QUICK","pay_no":"QDD201903150944199311","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"8b3eb32cfa875fee1329cc99d176ac49"} 
+
+2019-03-15 09:53:19  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190315095138","pay_id":"QWJ_QUICK","pay_no":"QDD201903150950595165","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"a75244d3bb1b480b400c849347918283"} 
+
+2019-03-15 09:54:18  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190315095330","pay_id":"QWJ_QUICK","pay_no":"QDD201903150952512506","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"82b7ee6feb346b6caa4861d2061658a3"} 
+
+2019-03-15 14:01:59  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190315140029","pay_id":"QWJ_QUICK","pay_no":"QDD201903151359499495","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"2ee0393e1e97a3d682ace6f06c0fdb4c"} 
+
+2019-03-15 14:03:56  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190315140249","pay_id":"QWJ_QUICK","pay_no":"QDD201903151402099882","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"abe035a0183d72d950cac9cffc647ae3"} 
+
+2019-03-17 15:36:03  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190317153429","pay_id":"QWJ_QUICK","pay_no":"QDD201903171533512876","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"ef6680c02bb2e69e3de30c2ab6e3c6f1"} 
+
+2019-03-18 10:15:23  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318100851","pay_id":"QWJ_QUICK","pay_no":"QDD201903181008147829","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"466397743739fb5e78c854a7938308cc"} 
+
+2019-03-18 10:17:35  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318101628","pay_id":"QWJ_QUICK","pay_no":"QDD201903181015515499","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"2822e3155abb65578188501dca0ab9dd"} 
+
+2019-03-18 12:47:54  回调信息：{"amount":"500.00","appid":"39838201","out_trade_no":"c20190318124702","pay_id":"QWJ_QUICK","pay_no":"QDD201903181246254876","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"492.00","version":"1.1","sign":"0ac6c3e7511ed7f581942eee4bdbc0db"} 
+
+2019-03-18 13:02:12  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318125822","pay_id":"QWJ_QUICK","pay_no":"QDD201903181257456027","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"a0aa8594be97fd718a364d8ad1d6aab2"} 
+
+2019-03-18 13:06:02  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318130531","pay_id":"QWJ_QUICK","pay_no":"QDD201903181304549064","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"d2a17d5aa702c3f5a769d4684a7163c9"} 
+
+2019-03-18 14:17:01  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318141546","pay_id":"QWJ_QUICK","pay_no":"QDD201903181415094578","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"5f1f0b916f1f0016d743ea1d874bf7e3"} 
+
+2019-03-18 14:21:26  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318142038","pay_id":"QWJ_QUICK","pay_no":"QDD201903181420029478","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"f91f993629d8592e8e844118d75293ab"} 
+
+2019-03-18 14:24:12  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318142332","pay_id":"QWJ_QUICK","pay_no":"QDD201903181422551107","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"1b32da7026c42a25ea68d7b0cabfd2c2"} 
+
+2019-03-18 14:44:03  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318144146","pay_id":"QWJ_QUICK","pay_no":"QDD201903181441096912","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"8720a9edbb2d0b4019496f7ab5b4e239"} 
+
+2019-03-18 14:47:43  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190318144623","pay_id":"QWJ_QUICK","pay_no":"QDD201903181445466156","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"e7b0d334028fe1261abf61a0ce3f5437"} 
+
+2019-03-19 09:06:22  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190319090526","pay_id":"QWJ_QUICK","pay_no":"QDD201903190904379189","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"3713318b00c37367afb39f2cfd5aa8a5"} 
+
+2019-03-19 09:08:06  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190319090657","pay_id":"QWJ_QUICK","pay_no":"QDD201903190906093999","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"deb1d1f72e3f3c477c1d65604726b1f3"} 
+
+2019-03-19 09:09:53  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190319090910","pay_id":"QWJ_QUICK","pay_no":"QDD201903190908227442","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"e42e6836d937636558ca398428785988"} 
+
+2019-03-19 09:12:55  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190319091204","pay_id":"QWJ_QUICK","pay_no":"QDD201903190911156712","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"d012906618f383287c863b17ab94ef1f"} 
+
+2019-03-19 09:14:15  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190319091324","pay_id":"QWJ_QUICK","pay_no":"QDD201903190912359603","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"8e1bbe344965951016740f6885a5d623"} 
+
+2019-03-19 09:58:13  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"c20190319095658","pay_id":"QWJ_QUICK","pay_no":"QDD201903190956094533","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2952.00","version":"1.1","sign":"d5077988bd91e3105c706ff088b20ded"} 
+
+2019-03-19 10:42:58  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"c20190319103938","pay_id":"QWJ_QUICK","pay_no":"QDD201903191038501102","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"984.00","version":"1.1","sign":"1387e8f6c6ec68425a099dc75879bc83"} 
+
+2019-03-19 12:43:32  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190319123909","pay_id":"QWJ_QUICK","pay_no":"QDD201903191238219692","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"40b10d84e170247d3a75550f2e58f71d"} 
+
+2019-03-19 13:13:34  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190319131205","pay_id":"QWJ_QUICK","pay_no":"QDD201903191311178182","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"ee106a86d87a92a0b324e562b8c7804c"} 
+
+2019-03-19 13:14:47  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190319131406","pay_id":"QWJ_QUICK","pay_no":"QDD201903191313179756","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"4202180e7f25a026e7567fe159c99e61"} 
+
+2019-03-19 13:16:27  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190319131515","pay_id":"QWJ_QUICK","pay_no":"QDD201903191314274394","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"b32ad5b5580b866d46600a2ff3b8327d"} 
+
+2019-03-20 08:31:55  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190320083107","pay_id":"QWJ_QUICK","pay_no":"QDD201903200830161129","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"4a1f666980a72f46caec21c0f54a8503"} 
+
+2019-03-20 08:33:15  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190320083230","pay_id":"QWJ_QUICK","pay_no":"QDD201903200831399631","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"f1223f66617e3cca9334e792010335bc"} 
+
+2019-03-25 11:37:48  回调信息：{"amount":"50.00","appid":"39838201","out_trade_no":"c20190325113721","pay_id":"QWJ_QUICK","pay_no":"QDD201903251136205240","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"49.20","version":"1.1","sign":"9e8f216712fcecb3cc6e242312d43469"} 
+
+2019-03-25 11:50:50  回调信息：{"amount":"50.00","appid":"39838201","out_trade_no":"c20190325115006","pay_id":"QWJ_QUICK","pay_no":"QDD201903251149054001","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"49.20","version":"1.1","sign":"1bfe37a43fc7c15622ae931f25b3f0ba"} 
+
+2019-03-25 13:19:26  回调信息：{"amount":"200.00","appid":"39838201","out_trade_no":"c20190325131745","pay_id":"QWJ_QUICK","pay_no":"QDD201903251316441000","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"196.80","version":"1.1","sign":"7afbbe7c28f97adcec4aaa36df58e688"} 
+
+2019-03-25 13:36:41  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190325133532","pay_id":"QWJ_QUICK","pay_no":"QDD201903251334317899","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"d4215091444479c2c7b9993ad2e28894"} 
+
+2019-03-25 13:38:14  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190325133746","pay_id":"QWJ_QUICK","pay_no":"QDD201903251336457392","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"4ca6d61fbdf68f3a803c815e3f3170b4"} 
+
+2019-03-25 14:00:19  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190325135948","pay_id":"QWJ_QUICK","pay_no":"QDD201903251358479671","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"063d6bf140ca613966efab23a3844502"} 
+
+2019-03-26 10:18:32  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326101802","pay_id":"QWJ_QUICK","pay_no":"QDD201903261016592756","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"37210637891371b3c0cc88be5b16e697"} 
+
+2019-03-26 10:22:56  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326102223","pay_id":"QWJ_QUICK","pay_no":"QDD201903261021202771","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"10c5fb4abec97d060c4a8084823858b9"} 
+
+2019-03-26 10:38:25  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326103508","pay_id":"QWJ_QUICK","pay_no":"QDD201903261034058759","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"178037697bacdccda47d79b4f13ce8a1"} 
+
+2019-03-26 10:55:55  回调信息：{"amount":"500.00","appid":"39838201","out_trade_no":"c20190326105404","pay_id":"QWJ_QUICK","pay_no":"QDD201903261053012319","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"492.00","version":"1.1","sign":"4b483cca7c6cafed804bee30a9b6ffbd"} 
+
+2019-03-26 14:25:24  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326142426","pay_id":"QWJ_QUICK","pay_no":"QDD201903261423233014","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"efa3bfa12a58f6fbf12546c1dd7ca7fe"} 
+
+2019-03-26 14:27:27  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326142645","pay_id":"QWJ_QUICK","pay_no":"QDD201903261425425707","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"9008b001c6e5ba199c1e707585236eaf"} 
+
+2019-03-26 18:17:51  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"c20190326181643","pay_id":"QWJ_QUICK","pay_no":"QDD201903261815396437","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"6f995e742b685fa9c419339da968263a"} 
+
+2019-03-26 18:32:44  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326183204","pay_id":"QWJ_QUICK","pay_no":"QDD201903261831015275","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"c3afa65232fd3e3217f02941303f8ca3"} 
+
+2019-03-26 20:25:00  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326202339","pay_id":"QWJ_QUICK","pay_no":"QDD201903262022351605","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"7b2514349c5f97209a241c3724461288"} 
+
+2019-03-26 20:26:07  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326202535","pay_id":"QWJ_QUICK","pay_no":"QDD201903262024311045","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"26272870b15a6b2559f11291cbc59970"} 
+
+2019-03-26 20:32:09  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326203132","pay_id":"QWJ_QUICK","pay_no":"QDD201903262030284276","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"fcf6a76b405521c08c05139b35783139"} 
+
+2019-03-26 20:33:20  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326203247","pay_id":"QWJ_QUICK","pay_no":"QDD201903262031436512","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"ef09de8c8835c5c7dde0aa44404ab2f8"} 
+
+2019-03-26 20:35:02  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326203419","pay_id":"QWJ_QUICK","pay_no":"QDD201903262033163158","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"4fa5a264222b2290d59795c232fb2ad1"} 
+
+2019-03-26 20:36:18  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326203534","pay_id":"QWJ_QUICK","pay_no":"QDD201903262034311199","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"ed84f2f8860ef8544b65999149196762"} 
+
+2019-03-26 20:37:26  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326203645","pay_id":"QWJ_QUICK","pay_no":"QDD201903262035419966","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"430e88922777153e037333f9d9469185"} 
+
+2019-03-26 20:38:48  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326203819","pay_id":"QWJ_QUICK","pay_no":"QDD201903262037154587","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"736343775abb58242eede2e657bb5f42"} 
+
+2019-03-26 20:39:53  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326203921","pay_id":"QWJ_QUICK","pay_no":"QDD201903262038186110","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"740cd7bfdf6021b88826dcdf1fa98057"} 
+
+2019-03-26 20:40:56  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204019","pay_id":"QWJ_QUICK","pay_no":"QDD201903262039155536","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"c992c6a5fbb48fbba492bc48fab42ce1"} 
+
+2019-03-26 20:42:02  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204132","pay_id":"QWJ_QUICK","pay_no":"QDD201903262040286253","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"8d92a4e9314429e09bf791ecce69df61"} 
+
+2019-03-26 20:43:56  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204320","pay_id":"QWJ_QUICK","pay_no":"QDD201903262042166974","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"9e5c04ee540815a6db83fe112c4f0c3c"} 
+
+2019-03-26 20:44:51  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204417","pay_id":"QWJ_QUICK","pay_no":"QDD201903262043144160","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"68a872b53f099b0e025aca0be9e35275"} 
+
+2019-03-26 20:45:44  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204513","pay_id":"QWJ_QUICK","pay_no":"QDD201903262044099896","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"bc270aba2d1e08796d4aebab8de6c40b"} 
+
+2019-03-26 20:46:50  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204609","pay_id":"QWJ_QUICK","pay_no":"QDD201903262045054807","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"09c13b67697ee79ca37b594f74f210f2"} 
+
+2019-03-26 20:48:31  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204712","pay_id":"QWJ_QUICK","pay_no":"QDD201903262046083177","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"3d6686b7f94622e0e650ceb11d11d4bd"} 
+
+2019-03-26 20:48:49  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204807","pay_id":"QWJ_QUICK","pay_no":"QDD201903262047037301","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"0d40457e1573cf0e0599188bec7b6eba"} 
+
+2019-03-26 20:50:27  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326204926","pay_id":"QWJ_QUICK","pay_no":"QDD201903262048223028","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"f15c1d518a8b73f3e100054af2549b64"} 
+
+2019-03-26 20:51:13  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190326205041","pay_id":"QWJ_QUICK","pay_no":"QDD201903262049374464","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"6a3808533672377084e832d82578ba35"} 
+
+2019-03-27 09:39:11  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190327093637","pay_id":"QWJ_QUICK","pay_no":"QDD201903270935331214","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"c90e238df323b670d7a0bfb0db049a94"} 
+
+2019-03-27 12:16:45  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190327121439","pay_id":"QWJ_QUICK","pay_no":"QDD201903271213356671","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"03128e9fac0e6a4e87a3fa28b2c0d7e1"} 
+
+2019-03-27 12:49:45  回调信息：{"amount":"74.00","appid":"39838201","out_trade_no":"c20190327124726","pay_id":"QWJ_QUICK","pay_no":"QDD201903271246216830","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"72.81","version":"1.1","sign":"4d120ed1b304553eba0fb520cbb13c22"} 
+
+2019-03-27 12:57:36  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190327125647","pay_id":"QWJ_QUICK","pay_no":"QDD201903271255423619","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"60766ea5c120dabea5608a8c11c5ce3a"} 
+
+2019-03-27 13:02:30  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190327130159","pay_id":"QWJ_QUICK","pay_no":"QDD201903271300547457","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"42f777cd18b3c7a1b1e27c75b7d8cdec"} 
+
+2019-03-27 13:03:52  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190327130317","pay_id":"QWJ_QUICK","pay_no":"QDD201903271302123600","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"fce99d8354e2f5fcab194a93312c058b"} 
+
+2019-03-27 13:04:57  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190327130425","pay_id":"QWJ_QUICK","pay_no":"QDD201903271303206314","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"36e17cb170eecae5e98b53a3443946b9"} 
+
+2019-03-27 13:40:20  回调信息：{"amount":"50.00","appid":"39838201","out_trade_no":"c20190327133951","pay_id":"QWJ_QUICK","pay_no":"QDD201903271338465415","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"49.20","version":"1.1","sign":"4cb1d73860d888e6789eca97112ecbd3"} 
+
+2019-03-27 13:43:23  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190327134220","pay_id":"QWJ_QUICK","pay_no":"QDD201903271341159700","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"3ebf33c32202357c4c93f8f52feb57f4"} 
+
+2019-03-27 13:44:35  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190327134410","pay_id":"QWJ_QUICK","pay_no":"QDD201903271343051987","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"ced7bce4cde385fcb738e957ecc2728a"} 
+
+2019-03-27 13:49:25  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190327134830","pay_id":"QWJ_QUICK","pay_no":"QDD201903271347251620","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"30db0ce5144467d4ebee34fdc9768369"} 
+
+2019-03-27 14:31:49  回调信息：{"amount":"500.00","appid":"39838201","out_trade_no":"c20190327143110","pay_id":"QWJ_QUICK","pay_no":"QDD201903271430053364","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"492.00","version":"1.1","sign":"cd224e87b0610cfac3faf90b781903b5"} 
+
+2019-03-28 10:01:46  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190328100025","pay_id":"QWJ_QUICK","pay_no":"QDD201903280959195816","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"3394e613046d636a4a24f4efcd4af5aa"} 
+
+2019-03-28 10:03:03  回调信息：{"amount":"3000.00","appid":"39838201","out_trade_no":"c20190328100207","pay_id":"QWJ_QUICK","pay_no":"QDD201903281001011824","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"2952.00","version":"1.1","sign":"50c08ef77488109e452a1718d34d47ea"} 
+
+2019-03-28 10:07:24  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190328100542","pay_id":"QWJ_QUICK","pay_no":"QDD201903281004357717","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"b287562a193bcefe10ebf575c4f69ae9"} 
+
+2019-03-28 10:21:51  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"c20190328102054","pay_id":"QWJ_QUICK","pay_no":"QDD201903281019474170","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"bc6e6b6f68119720a2812392007017df"} 
+
+2019-03-28 10:24:07  回调信息：{"amount":"1000.00","appid":"39838201","out_trade_no":"c20190328102323","pay_id":"QWJ_QUICK","pay_no":"QDD201903281022165333","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"984.00","version":"1.1","sign":"4945330a9b40975b6401add633a9c138"} 
+
+2019-03-28 10:25:31  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190328102433","pay_id":"QWJ_QUICK","pay_no":"QDD201903281023278161","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"95615209aed972b7093d67b1838044cd"} 
+
+2019-03-28 10:33:07  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190328103211","pay_id":"QWJ_QUICK","pay_no":"QDD201903281031057675","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"ff4b1f4271f601011ad23d41841fe87d"} 
+
+2019-03-28 10:34:41  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190328103346","pay_id":"QWJ_QUICK","pay_no":"QDD201903281032404423","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"0fc12eb08dfb6b3238f62d98e45aed08"} 
+
+2019-03-28 10:40:17  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190328103924","pay_id":"QWJ_QUICK","pay_no":"QDD201903281038174685","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"7ef76943ad4910d9437c019674bd5b64"} 
+
+2019-03-28 10:42:36  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190328104146","pay_id":"QWJ_QUICK","pay_no":"QDD201903281040397138","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"d4312088bc7f2cc4f7880de206da7dbb"} 
+
+2019-03-28 10:43:50  回调信息：{"amount":"5000.00","appid":"39838201","out_trade_no":"c20190328104307","pay_id":"QWJ_QUICK","pay_no":"QDD201903281042011480","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4920.00","version":"1.1","sign":"58aac2951fadc21bc4e8807adc86ff73"} 
+
+2019-03-28 10:45:25  回调信息：{"amount":"4900.00","appid":"39838201","out_trade_no":"c20190328104446","pay_id":"QWJ_QUICK","pay_no":"QDD201903281043393914","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"4821.60","version":"1.1","sign":"24dc4782639d090f933b65350418ea7c"} 
+
+2019-03-28 10:52:53  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"c20190328105202","pay_id":"QWJ_QUICK","pay_no":"QDD201903281050557516","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"a2899587ed38e3883e615874aca16feb"} 
+
+2019-03-28 11:35:40  回调信息：{"amount":"100.00","appid":"39838201","out_trade_no":"c20190328113405","pay_id":"QWJ_QUICK","pay_no":"QDD201903281132598304","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"98.40","version":"1.1","sign":"0f7023897ffb5b8e1feb73ba172c2e99"} 
+
+2019-03-28 13:16:38  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190328131615","pay_id":"QWJ_QUICK","pay_no":"QDD201903281315082729","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"54c8d251d4e14400a6bbca8fbec151bc"} 
+
+2019-03-28 13:17:21  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190328131658","pay_id":"QWJ_QUICK","pay_no":"QDD201903281315528984","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"b17e55c2817362c268f1c4d919c621f5"} 
+
+2019-03-28 13:23:25  回调信息：{"amount":"2000.00","appid":"39838201","out_trade_no":"c20190328132257","pay_id":"QWJ_QUICK","pay_no":"QDD201903281321501661","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"1968.00","version":"1.1","sign":"27848825d3f78e53d4ac2be2ae142d70"} 
+
+2019-03-28 13:24:12  回调信息：{"amount":"4000.00","appid":"39838201","out_trade_no":"c20190328132347","pay_id":"QWJ_QUICK","pay_no":"QDD201903281322414810","payment":"1","resp_code":"00","resp_desc":"\u652f\u4ed8\u6210\u529f","tran_amount":"3936.00","version":"1.1","sign":"6a6810733094e623eeec66890f1c0e69"} 

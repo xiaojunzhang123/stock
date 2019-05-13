@@ -1,0 +1,42 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/resource/home/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+setInterval('plate()', 2000);
+	setInterval('px()', 10000);
+	setInterval('sell()', 2000);
+	setInterval('stock()', 300000);
+	function plate(){
+		$.get('/cron/plate');
+	}
+
+    function px(){
+    	$.get('/cron/px');
+  	}
+  	function defer(){
+
+    	$.get('/cron/defer');
+  	}
+
+	function jiancang(){
+    	$.get('/cron/jiancang');
+  	}
+	function sell(){
+    	$.get('/cron/sell');
+  	}
+	function stock(){
+    	$.get('/cron/stock');
+  	}
+	function proxy_rebate(){
+    	$.get('/cron/proxy-rebate');
+  	}
+
+	function niurenrebate(){
+    	$.get('/cron/niuren-rebate');
+  	}
+</script>
+<script>
+   setInterval("window.location.reload();",1000*60*3);
+</script>
+<h3>
+	后台定时器打开中，请勿关闭此页面。
+</h3>

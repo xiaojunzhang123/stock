@@ -1,0 +1,194 @@
+{extend name="layouts/layout_user" /}
+
+{block name="title"}
+设置
+{/block}
+
+{block name="style"}
+<style type="text/css">
+    body{
+        background: #f5f5f5;
+    }
+    .modify_name_con{
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        z-index: 9999;
+        left: 0;
+        bottom: 0;
+    }
+    .modify_n_title{
+        text-align: center;
+        font-size: 17px;
+        color: #333;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 32px;
+        margin: 0;
+        background: #f5f5f5;
+    }
+    .modify_name_mask{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,.4);
+        left: 0;
+        top: 0;
+        display: none;
+    }
+    .modify_n_title span{
+        font-size: 12px;
+    }
+    .modify_name_con textarea{
+        width: 100%;
+        height: 70px;
+        background: #fff;
+        font-size: 14px;
+        color: #333;
+        padding: 14px;
+    }
+</style>
+{/block}
+
+{block name="body"}
+<body style="height: 100%;display: inline-block;width: 100%;" class="mui-ios mui-ios-10 mui-ios-10-3">
+{/block}
+
+{block name="content"}
+    <div class="bg" style="min-height: 100%;margin-bottom: -50px;">
+        <div class="person_content mui-content" style="min-height: 100%;">
+            <header class="has_back_top ">
+                设置
+                <a href="javascript:history.go(-1)" class="back_icon">
+                    <img src="__RESOURCE__/img/back_icon.png">
+                </a>
+            </header>
+
+
+            <ul class="setting_list" style="margin-top: 58px;">
+                <li class="clear_fl" id="uploadImg">
+                    <span class="setting_key lf">头像</span>
+                    <img class="rt right_arrow" src="__RESOURCE__/img/right_arrow1.png">
+                    <span class="rt setting_value"  style="position: relative;overflow: hidden;">
+                        <img src="{$user.face|default='/resource/home/img/default-user-img.png'}">
+                        <input id="avatar" type="file" name="" style="position: absolute;width: 100%;height: 100%;z-index: 999;opacity: 0;right: 0;top: 0;">
+                    </span>
+                </li>
+                <li class="clear_fl">
+                    <span class="setting_key lf">昵称</span>
+                    <img class="rt right_arrow" src="__RESOURCE__/img/right_arrow1.png">
+                    <span class="rt setting_value modify_name_btn">{$user.nickname|default=$user.username}</span>
+                </li>
+                <li class="clear_fl">
+                    <span class="setting_key lf">手机号码</span>
+                    <span class="rt setting_value">{$user.mobile}</span>
+                </li>
+                <li class="clear_fl">
+                    <a href="{:url('index/User/password')}" class="clear_fl">
+                        <span class="setting_key lf">登录密码</span>
+                        <img class="rt right_arrow" src="__RESOURCE__/img/right_arrow1.png">
+                        <span class="rt setting_value">修改密码</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="clear_fl publish_msg">
+                <div class="lf setting_key">是否公开实盘信息</div>
+                <input type="checkbox" class="switch__mui-switch___3_30S switch__mui-switch-anim___3IUf5 rt"  value="on">
+            </div>
+
+            <div class="recharge-btn" id="payBtn">退出系统</div>
+        </div>
+
+        <div class="modify_name_mask">
+            <div class="modify_name_con">
+                <p class="modify_n_title clear_fl">
+                    <span class="lf caclel_btn">取消</span>
+                    修改昵称
+                    <span class="rt confirm_btn">确认</span>
+                </p>
+
+                <textarea placeholder="请输入昵称"></textarea>
+            </div>
+        </div>
+    </div>
+{/block}
+
+{block name="nav"}
+{/block}
+
+{block name="script"}
+    <script type="text/javascript" src="__RESOURCE__/js/common.js"></script>
+    <script type="text/javascript">
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        })
+        //选项卡
+         mui('body').on('tap', 'a', function() {
+            var data_href = this.getAttribute("data-href");
+            var href = this.getAttribute("href");
+            var url=data_href;
+            if(!url||url==''){
+                url=href;
+            }
+            window.location.href = url;
+         });
+        
+
+        
+        $("input[type='file']").change(function () {
+        var _formData = new FormData();
+        _formData.append("avatar", document.getElementById("avatar").files[0]);
+        $.ajax({
+            url: "{:url('index/User/avatar')}",
+            type: "POST",
+            data: _formData,
+            contentType: false,
+            processData: false,
+            success: function (resp) {
+                hideLoading();
+                if(1 == resp.state){
+                    $(".user-pic-inp img").attr("src", resp.data.avatar);
+                    $alert("头像修改成功！");
+                    window.location.reload();
+                }else{
+                    $alert(resp.info);
+                }
+            },
+            error: function () {
+                $alert("头像修改失败！");
+            }
+        });
+    });
+
+        $("#payBtn").click(function(){
+            window.location.href = "{:url('index/Home/logout')}";
+        });
+
+
+        $(".modify_name_btn").click(function(){
+            $(".modify_name_mask").show();
+        });
+        $(".caclel_btn").click(function(){
+            $(".modify_name_mask").hide();
+        });
+
+        $(".confirm_btn").click(function(){
+            // 提交修改名字
+            var nickname = $(".modify_name_con textarea").val();
+            var _url = '{:url("index/User/nickEdit")}',
+                _oData = {nickname : nickname};
+            $ajaxCustom(_url, _oData, function(res){
+                if(res.state == 1){
+                    $alert("修改成功");
+                    $(".modify_name_btn").html( nickname );
+                    $(".modify_name_con textarea").val()
+                    $(".modify_name_mask").hide();
+                }else{
+                    $alert(res.info);
+                }
+            });
+
+        });
+    </script>
+{/block}

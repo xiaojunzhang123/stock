@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://www.fcml888.com/ucenter/quick_pay.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>持仓</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<link href="css/mui.min.css" rel="stylesheet">
+		<link href="css/person.css" rel="stylesheet">
+
+		<style type="text/css">
+			.postion_tab li.active>p a {
+			    border-bottom: 2px solid #fc5055;
+			    display: inline-block;
+			    color: #fc5055;
+			}
+			.postion_tab li>p a{
+				color: #8f8f94;
+				font-size: 13px;
+			}
+			.postion_tab_con{
+				display: block!important;
+			}
+			/******  弹框  *****/
+			.read_risk_btn {
+			    position: absolute;
+			    width: 100%;
+			    text-align: center;
+			    height: 40px;
+			    line-height: 40px;
+			    color: #fc5155;
+			    font-size: 14px;
+			    left: 0;
+			    bottom: 0;
+			    border-top: 1px solid #ececec;
+			    margin: 0;
+			}
+			.risk_text {
+			    padding: 10px 18px;
+			    margin-bottom: 30px;
+			}
+			.now_count {
+			    width: 100%;
+			    border: 1px solid #ededed;
+			    height: 30px;
+			    line-height: 30px;
+			    text-align: center;
+			    font-size: 12px;
+			    color: #333;
+			}
+			.control_point>span.lf {
+			    font-size: 12px;
+			    color: #333;
+			    width: 18%;
+			}
+			.fudong {
+			    font-size: 12px;
+			    color: #999;
+			    width: 90px;
+			}
+			.count_panel {
+			    width: calc(80% - 100px);
+			    margin-top: 10px;
+			}
+			.risk_content {
+			    width: 100%;
+			    background: #fff;
+			    margin-top: 200px;
+			    position: absolute;
+			    left: 0;
+			    bottom: 0;
+			    overflow: hidden;
+			    border-radius: 8px 8px 0 0;
+			}
+			.cancel_btn{
+			    width: 45%;
+			    text-align: center;
+			    margin-bottom: 0;
+			    height: 40px;
+			    line-height: 40px;
+				font-size: 14px;
+				color: #999;
+				margin-right: 0;
+			}
+			.confirm_btn{
+				width: 55%;
+				text-align: center;
+			    margin-bottom: 0;
+			    height: 40px;
+			    line-height: 40px;
+				font-size: 14px;
+				color: #999;
+				background-color: rgb(255, 90, 90);
+    			color: white;
+			}
+			.add_banzhengjin h1{
+				font-size: 15px;
+				color: #333;
+				line-height: 30px;
+				font-weight: 400;
+			}
+			.bazhengjin_count{
+				font-size: 15px;
+				color: #333;
+				line-height: 30px;
+				text-align: right;
+			}
+			.bazhengjin_count span{
+				color: #fe5859;
+			}
+			.account_balance{
+				font-size: 15px;
+				color: #999;
+				line-height: 40px;
+				text-align: right;
+			}
+			.account_balance span{
+				color: #fe5859;
+			}
+			.modify_items{
+				height: 38px;
+				line-height: 38px;
+				font-size: 14px;
+				color: #333;
+			}
+			.modify_items+.modify_items{
+				border-top: 1px solid #ededed;
+			}
+		</style>
+	</head>
+<!--个人中心-充值-支付宝-->
+	<body class="quick_body payment_body mui-ios mui-ios-10 mui-ios-10-3">  
+			<!-- 说明 - start -->
+		    <div class="risk_mask">
+		        <div class="risk_content">
+		            <p class="risk_title">修改止盈止损</p>
+		            <div class="risk_text">
+		            	<section class="buy_section">
+							<div class="control_point zhiying clear_fl">
+								<span class="lf">止盈</span>
+								<p class="lf count_panel flex_nowrap">
+									<span class="minus_btn count_btn">-</span>
+									<!-- <span class="now_count">13.63</span> -->
+									<input readonly="readonly" value="13.08" class="now_count profitCount" data-initvalue="13.88">
+									<span class="plus_btn count_btn">+</span>
+								</p>
+								<p class="rt fudong zhangfu">涨幅约 <span>+11.85%</span></p>
+							</div>
+
+							<div class="control_point zhisun clear_fl">
+								<span class="lf">止损</span>
+								<p class="lf count_panel flex_nowrap">
+									<span class="minus_btn count_btn">-</span>
+									<!-- <span class="now_count">13.63</span> -->
+									<input readonly="readonly" value="9.07" class="now_count lossCount" data-initvalue="10.94">
+									<span class="plus_btn count_btn">+</span>
+								</p>
+								<p class="rt fudong diefu">跌幅约 <span>-11.83%</span></p>
+							</div>
+
+							<div class="clear_fl add_banzhengjin">
+								<h1 class="lf">补充保证金</h1>
+								<div class="rt">
+									<p class="bazhengjin_count"><span>0.00</span>元</p>
+									<p class="account_balance">账户余额 <span>909998.90</span>元				</p>
+								</div>
+							</div>
+						</section>
+		            </div>
+		            <div class="read_risk_btn clear_fl">
+		            	<p class="lf cancel_btn">取消</p>
+		            	<p class="rt confirm_btn">确认</p>
+		            </div>
+		        </div>
+		    </div>
+		    <!-- end -->
+
+
+		    <!-- 说明 - start -->
+		    <div class="risk_mask hide">
+		        <div class="risk_content">
+		            <p class="risk_title">补充保证金</p>
+		            <div class="risk_text">
+		            	<section class="buy_section">
+							<div class="clear_fl modify_items">
+								<span class="lf key">保证金</span>
+								<span class="rt value">1250.00元</span>
+							</div>
+
+							<div class="clear_fl modify_items">
+								<span class="lf key">剩余保证金</span>
+								<span class="rt value">1250.00元</span>
+							</div>
+
+							<div class="clear_fl modify_items">
+								<span class="lf key">补充保证金</span>
+								<p class="bazhengjin_count rt"><span>0.00</span>元</p>
+							</div>
+
+							<p class="account_balance">账户余额 
+								<span>909998.90</span>元				
+							</p>
+						</section>
+		            </div>
+		            <div class="read_risk_btn clear_fl">
+		            	<p class="lf cancel_btn">取消</p>
+		            	<p class="rt confirm_btn">确认</p>
+		            </div>
+		        </div>
+		    </div>
+		    <!-- end -->
+		<header class="strategy_top">
+			<p>
+				<a href="策略.html">策略</a>
+				<a href="持仓.html" class="active">持仓</a>
+			</p>
+		</header>
+		
+		<ul class="position_section clear_fl">
+			<li>
+				<p>净资产</p>
+				<p>￥12313.23</p>
+			</li>
+			<li>
+				<p>可用资金</p>
+				<p>￥12313.23</p>
+			</li>
+			<li>
+				<p>持仓市值</p>
+				<p>￥12313.23</p>
+			</li>
+			<li>
+				<p>浮动盈亏</p>
+				<p>+12313.23</p>
+			</li>
+		</ul>
+		<ul class="postion_tab flex_nowrap">
+			<li class="active">
+				<p><a href="">当前持仓</a></p>
+			</li>
+
+			<li>
+				<p><a href="">当前委托</a></p>
+			</li>
+
+			<li>
+				<p><a href="">历史交易</a></p>
+			</li>
+			<ul class="postion_tab_con">
+					<li>
+						<h1 class="clear_fl">
+							<span class="lf">招商银行 600036</span>
+							<span class="rt"> <span class="p_key"></span>01-08 11:07</span>
+						</h1>
+						<div class="clear_fl p_info">
+							<p>
+								<span class="p_key">买价</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">现价</span> 
+								<span class="p_value red">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">数量</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">市值</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">收益率</span> 
+								<span class="p_value red">+29.45%</span>
+							</p>
+							<p>
+								<span class="p_key">盈亏</span> 
+								<span class="p_value red">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">保证金</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">止损</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">止盈</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">递延费</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">分红</span> 
+								<span class="p_value">29.45</span>
+							</p>
+						</div>
+						<div class="clear_fl p_control_panel">
+							<p class="rt">
+								<a class="add_money  lf" href="">补充保证金</a>
+								<a class="modify_point  lf" href="">修改止盈止损</a>
+								<a class="sell_position_btn lf" href="">平仓</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<h1 class="clear_fl">
+							<span class="lf">招商银行 600036</span>
+							<span class="rt"> <span class="p_key"></span>01-08 11:07</span>
+						</h1>
+						<div class="clear_fl p_info">
+							<p>
+								<span class="p_key">买价</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">现价</span> 
+								<span class="p_value red">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">数量</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">市值</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">收益率</span> 
+								<span class="p_value red">+29.45%</span>
+							</p>
+							<p>
+								<span class="p_key">盈亏</span> 
+								<span class="p_value red">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">保证金</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">止损</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">止盈</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">递延费</span> 
+								<span class="p_value">29.45</span>
+							</p>
+							<p>
+								<span class="p_key">分红</span> 
+								<span class="p_value">29.45</span>
+							</p>
+						</div>
+						<div class="clear_fl p_control_panel">
+							<p class="rt">
+								<a class="add_money  lf" href="">补充保证金</a>
+								<a class="modify_point  lf" href="">修改止盈止损</a>
+								<a class="sell_position_btn lf" href="">平仓</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+		</ul>
+
+		
+		<nav class="ml_tab mui-bar mui-bar-tab">
+		    <a class="mui-tab-item" href="index.html">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item" href="buy.html">
+		        <span class="mui-icon mui-icon-zixuan"></span>
+		        <span class="mui-tab-label">自选</span>
+		    </a>
+		    <a class="mui-tab-item center_item" href="AI智能推荐.html">
+		        <span class="mui-icon mui-icon-celue"></span>
+		        <span class="mui-tab-label">AI智能推荐</span>
+		    </a>
+		    <a class="mui-tab-item mui-active" href="策略.html">
+		        <span class="mui-icon mui-icon-jingu"></span>
+		        <span class="mui-tab-label">策略</span>
+		    </a>
+		    <a class="mui-tab-item" href="home.html">
+		        <span class="mui-icon mui-icon-my"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/mui.min.js"></script>
+
+<script type="text/javascript">
+	$(".postion_tab").on("tap" , "li" , function(){
+		$(this).addClass("active").siblings(".active").removeClass("active");
+	});
+
+
+	mui.init({
+		swipeBack: true //启用右滑关闭功能
+	})
+	//选项卡
+	 mui('body').on('tap', 'a', function() {
+        var data_href = this.getAttribute("data-href");
+        var href = this.getAttribute("href");
+        var url=data_href;
+        if(!url||url==''){
+            url=href;
+        }
+        window.location.href = url;
+     });
+
+
+</script>
+
+
+</body></html>

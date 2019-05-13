@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>{block name="title"}标题{/block}</title>
+        <meta name="keywords" content=" ">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="__RESOURCEWEB__/css/common.css">
+        <link rel="stylesheet" type="text/css" href="__RESOURCEWEB__/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="__RESOURCEWEB__/css/index.css">
+        <link rel="stylesheet" type="text/css" href="__RESOURCEWEB__/css/buy.css">
+        <script type="text/javascript" src="__RESOURCEWEB__/js/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="__RESOURCEWEB__/js/jquery.flexslider-min.js"></script>
+        {block name="style"}样式{/block}
+    </head>
+{block name="body"}
+    <body class="index_body">
+{/block}
+<!--头部-->
+<header class="ml_header br-w100">
+    <div class="h_top br-w100">
+        <div class="w1024 br-clearfix">
+            <div class="h_topL br-fl">
+                
+                <a id="qqicon" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2241944837&amp;site=qq&amp;menu=yes"></a>
+            </div>
+            {empty name="userInfo"}
+            <div id="page_shared_layout_login" class="h_topR br-fr">
+                <a class="login" href="{:url('../../login')}">登录</a>
+                <a class="register" href="{:url('../../register')}">注册</a>
+            </div>
+            {else /}
+
+            <ul id="page_shared_layout_unlogin" class="top-links f-right">
+                <li class="show-login" style="display: block;">您好，&nbsp;{$userInfo.nickname | default=$userInfo.username}</li>
+                <li class="show-login top-user-wrapper" style="display: block;">
+                    <span class="top-username">
+                    	<a id="page_shared_layout_login_name" href="{:url('web/User/index')}"></a>
+                    	<i class="icon icon-arrow-drop-down"></i>
+                    </span>
+                    <div class="overlay-account">
+                        <div class="group account-group">
+                            <span class="f-left">可用<b class="account-val" id="shared_header_mb"></b></span>
+                            <a name="realnameAuth" class="f-right" href="{:url('web/User/payMent')}">充值</a>
+                        </div>
+                        <div class="account-links group">
+                            <a class="f-left" href="{:url('web/User/index')}">个人中心</a>
+                            <span class="f-left sep">|</span>
+                            <a class="f-right js-logout" href="{:url('web/Home/logout')}">安全退出</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            {/empty}
+
+        </div>
+    </div>
+    <div class="h_bot br-w100">
+        <div class="w1024 br-clearfix">
+            <div class="h_botL br-fl">
+                <a href="{:url('web/Index/index')}"><img src="__RESOURCEWEB__/images/logo.png" style="height:60px; "></a>
+            </div>
+            <div class="h_botR br-fr">
+                <ul class="br-clearfix" id="menu-ul">
+                    <li class="br-fl"><a href="{:url('web/Index/index')}" {eq name="type" value="1"}class="active"{/eq} >首页</a></li>
+                    <li class="br-fl"><a href="{:url('../../login')}" {eq name="type" value="2"}class="active"{/eq} >登录</a></li>
+                    <!-- <li class="br-fl"><a href="freetrial.html">免费体验</a></li> -->
+                    <li class="br-fl"><a href="{:url('web/home/mobile')}" {eq name="type" value="3"}class="active"{/eq} >手机版</a></li>
+                    <!-- <li class="br-fl help_box">
+                        <a href="http://www.fcml888.com/guild.html">帮助中心</a>
+                        <ul class="new-sub-nav hide">
+                            <li class=""><a href="http://www.fcml888.com/guild.html">新手教学</a></li>
+                            <li class=""><a href="http://www.fcml888.com/help.html">常见问题</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+{block name="content"}{/block}
+
+
+
+
+<style>
+ 
+.rightfd{position:fixed;bottom:20px;width:55px;right:15px;font-size: 12px;text-align: center;top:250px;}
+.rightfd .d1{float:left;width:55px;height:65px;border-bottom:#5C5D6E solid 1px;background-color:#646577;}
+.rightfd .d1 .s1{float:left;width:55px;height:21px;padding:44px 0 0 0;text-align:center;color:#fff;background:url(/resource/web/images/zxicon.png) no-repeat;background-position:13px 10px;}
+.rightfd .d1 .sd1{position:absolute;left:-120px;top:0px;width:120px;background-color:#e40231;display:none;padding:10px 0 7px 0;color:#fff;}
+.rightfd .d1 .sd1 a{float:left;padding:3px 0 0 30px;background:url(/resource/web/images/qq4.gif) left top no-repeat;width:100px;height:21px;text-align:left;margin:0 0 6px 9px;color: #333}
+.rightfd .d1 .sd1 a:hover{text-decoration:none;color:red;}
+.rightfd .d1 .sd1 strong{color:#fff;}
+.rightfd .d1:hover .sd1{display:block;}
+.rightfd .d1:hover{background-color:#e40231;}
+.rightfd .d2{float:left;width:55px;height:65px;border-bottom:#5C5D6E solid 1px;background-color:#646577;}
+.rightfd .d2 .s1{float:left;width:55px;height:21px;padding:44px 0 0 0;text-align:center;color:#fff;background:url(/resource/web/images/kficon.png) no-repeat;background-position:13px 10px;}
+.rightfd .d2 .sd1{position:absolute;left:-120px;top:0px;width:120px;height:129px;background-color:#e40231;display:none;padding:10px 0 0 0;color:#fff;font-size: 12px;
+    text-align: center;}
+.rightfd .d2 .sd1 img{margin:0 0 5px 0;}
+.rightfd .d2:hover .sd1{display:block;}
+.rightfd .d2:hover{background-color:#e40231;}
+.rightfd .d3{float:left;width:55px;height:65px;background-color:#646577;cursor:pointer;}
+.rightfd .d3 .s1{float:left;width:55px;height:21px;padding:44px 0 0 0;text-align:center;color:#fff;background:url(/resource/web/images/fanhui.png) no-repeat;background-position:17px 10px;}
+.rightfd .d3:hover{background-color:#e40231;}
+</style>
+<div class="rightfd" style="display:;">
+ <div class="d1">
+  <span class="s1">联系客服</span>
+  <div class="sd1">
+  	<img src="/resource/web/images/kefu.png" width="100" height="100"><br>扫一扫联系客服
+    <!--<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2241944837&amp;site=http://www.syzg888.com/&amp;menu=yes" target="_blank">客服咨询</a>
+    <strong class="fontyh">联系客服<br></strong>-->
+  </div>
+ </div>
+
+ <div class="d2">
+  <span class="s1">手机版</span>
+  <div class="sd1">
+  <img src="/resource/web/images/syzglogo.png" width="100" height="100"><br>扫一扫进手机版
+  </div>
+ </div>
+
+ <div class="d3">
+  <span class="s1" onclick="gotoTop();return false;">返回顶部</span>
+ </div>
+ 
+</div>
+<!--底部-->
+{block name="footer"}
+<footer class="br-w100">
+    <!-- <div class="footer_top">
+        <a href="http://www.fcml888.com/company.html">关于我们</a>
+        <a href="http://www.fcml888.com/contact.html">联系我们</a>
+    </div> -->
+    <div class="footer_bot">
+        <div class="w1024 br-clearfix">
+            <div class="bot_l br-fl">
+                <p>浙江省杭州市西湖区创美华彩中心3幢8层801室<br>客服服务时间工作日：9:00-18:00</p></div>
+            <div class="bot_r br-fr br-text-center">
+                <div class="bot_r_img br-clearfix ">
+                    <span class="br-fl"><img src="__RESOURCEWEB__/images/f1.png"></span>
+                    <span class="br-fr"><img src="__RESOURCEWEB__/images/f2.png"></span>
+                </div>
+                <p>版权所有 © 杭州精鼎投资股份有限公司  </p>
+                <p>浙ICP备17030011号  投资有风险 入市需谨慎</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{/block}
+</body>
+</html>
+<script type="text/javascript">
+    
+    //回到顶部
+function gotoTop(acceleration,stime){acceleration=acceleration||0.1;stime=stime||10;var x1=0;var y1=0;var x2=0;var y2=0;var x3=0;var y3=0;if(document.documentElement){x1=document.documentElement.scrollLeft||0;y1=document.documentElement.scrollTop||0;}
+if(document.body){x2=document.body.scrollLeft||0;y2=document.body.scrollTop||0;}
+var x3=window.scrollX||0;var y3=window.scrollY||0;var x=Math.max(x1,Math.max(x2,x3));var y=Math.max(y1,Math.max(y2,y3));var speeding=1+ acceleration;window.scrollTo(Math.floor(x/speeding),Math.floor(y/speeding));if(x>0||y>0){var run="gotoTop("+ acceleration+", "+ stime+")";window.setTimeout(run,stime);}}
+</script>
+<script type="text/javascript" src="__RESOURCEWEB__/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="__RESOURCEWEB__/js/mui.min.js"></script>
+<script type="text/javascript" src="/resource/admin/lib/layer/layer.js"></script>
+<script type="text/javascript" src="__RESOURCEWEB__/js/common.js"></script>
+<script type="text/javascript" src="__RESOURCEWEB__/js/config.js"></script>
+<script type="text/javascript" src="__RESOURCEWEB__/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__RESOURCEWEB__/js/index.js"></script>
+<script type="text/javascript" src="__RESOURCEWEB__/js/general.js"></script>
+{block name="script"}{/block}

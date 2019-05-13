@@ -1,0 +1,180 @@
+{extend name="layouts/layout_iframe" /}
+
+{block name="title"}角色管理{/block}
+
+{block name="body"}
+<nav class="breadcrumb">
+    <i class="Hui-iconfont Hui-iconfont-home2"></i> 首页
+    <span class="c-gray en">&gt;</span> 管理员管理
+    <span class="c-gray en">&gt;</span> 管理员列表
+    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+        <i class="Hui-iconfont Hui-iconfont-huanyipi"></i>
+    </a>
+</nav>
+<div class="page-container">
+    <form action="" method="get">
+    <div class="text-c">
+        <input type="text" class="input-text" style="width:170px;" placeholder="登录名" name="username" value="{$search.username|default=''}">
+        <input type="text" class="input-text" style="width:170px;" placeholder="昵称" name="nickname" value="{$search.nickname|default=''}">
+        <input type="text" class="input-text" style="width:170px;" placeholder="手机号" name="mobile" value="{$search.mobile|default=''}">
+        <span class="select-box" style="width:130px;height: 31px;">
+            <select class="select" name="role" size="1">
+                <option value="">所属角色</option>
+                {volist name="roles" id="item"}
+                <option value="{$item.id}" {if condition="isset($search.role) AND $search.role eq $item.id"}selected{/if}>{$item.name}</option>
+                {/volist}
+            </select>
+        </span>
+        <span class="select-box" style="width:70px;height: 31px;">
+            <select class="select" name="status" size="1">
+                <option value="">状态</option>
+                <option value="0" {if condition="isset($search.status) AND $search.status heq '0'"}selected{/if}>正常</option>
+                <option value="1" {if condition="isset($search.status) AND $search.status heq '1'"}selected{/if}>禁用</option>
+            </select>
+        </span>
+        <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont Hui-iconfont-search2"></i>搜索</button>
+    </div>
+    </form>
+    <div class="cl pd-5 bg-1 bk-gray mt-20">
+		<span class="l">
+            {if condition="in_array('admin/Admin/patchRemove', $Think.session.ACCESS_LIST)"}
+            <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius">
+                <i class="Hui-iconfont  Hui-iconfont-del3"></i> 批量删除
+            </a>
+            {/if}
+            {if condition="in_array('admin/Admin/create', $Think.session.ACCESS_LIST)"}
+			<a class="btn btn-primary radius" href="javascript:;" onclick="admin_add('添加管理员','{:url("admin/Admin/create")}','', '500')">
+				<i class="Hui-iconfont Hui-iconfont-add"></i> 添加管理员
+            </a>
+            {/if}
+        </span>
+        <span class="r">共有数据：<strong>{$datas.total}</strong> 条</span>
+    </div>
+    <table class="table table-border table-bordered table-hover table-bg">
+        <thead>
+        <tr class="text-c">
+            <th width="25"><input type="checkbox" value="" name=""></th>
+            <th width="40">ID</th>
+            <th>登录名</th>
+            <th>昵称</th>
+            <th>手机号</th>
+            <th>所属角色</th>
+            <th>最后登录IP</th>
+            <th>最后登录时间</th>
+            <th>状态</th>
+            <th width="80">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name="datas.data" id="item"}
+        <tr class="text-c admin-lists">
+            <td width="25"><input type="checkbox" value="{$item.admin_id}" name=""></td>
+            <td width="40">{$item.admin_id}</td>
+            <td>{$item.username}</td>
+            <td>{$item.nickname}</td>
+            <td>{$item.mobile}</td>
+            <td>{$item.has_one_role.name|default='系统管理员'}</td>
+            <td>{$item.last_ip}</td>
+            <td>
+                {if condition="$item.last_time"}{$item.last_time|date='Y-m-d H:i:s', ###}{/if}
+            </td>
+            <td>
+                {if condition="$item.status.value eq 0"}
+                <span class="label label-success radius">{$item.status.text}</span>
+                {else /}
+                <span class="label label-danger radius">{$item.status.text}</span>
+                {/if}
+            </td>
+            <td class="f-14">
+                {if condition="in_array('admin/Admin/modify', $Think.session.ACCESS_LIST)"}
+                <input class="btn btn-success size-MINI radius" type="button" title="管理员编辑" onclick="admin_edit('管理员编辑','{:url("admin/Admin/modify", ['id' => $item.admin_id])}','','500')" value="编辑">
+                {/if}
+                {if condition="in_array('admin/Admin/remove', $Think.session.ACCESS_LIST)"}
+                <input class="btn btn-danger size-MINI radius" type="button" title="管理员删除" onclick="admin_del(this,{$item.admin_id});" value="删除">
+                {/if}
+            </td>
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+    {$pages}
+</div>
+{/block}
+
+{block name="footer"}
+
+{/block}
+
+{block name="script"}
+<script>
+    /*用户-添加*/
+    {if condition="in_array('admin/Admin/create', $Think.session.ACCESS_LIST)"}
+    function admin_add(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+    {/if}
+
+    {if condition="in_array('admin/Admin/modify', $Think.session.ACCESS_LIST)"}
+    function admin_edit(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+    {/if}
+
+    {if condition="in_array('admin/Admin/remove', $Think.session.ACCESS_LIST)"}
+    function admin_del(_obj, _id) {
+        parent.layer.confirm('管理员删除不可逆，确认要删除吗？',function(index){
+            var _oData = {id:_id},
+                _url = '{:url("admin/Admin/remove")}',
+                _func = function (_resp) {
+                    parent.layer.close(index);
+                    if (!_resp.state) {
+                        layer.msg(_resp.info);
+                    } else {
+                        layer.msg('删除成功！', {time: 500}, function(){
+                            if(_resp.data && _resp.data.url){
+                                parent.window.location.href = _resp.data.url;
+                            }else{
+                                $(_obj).parents("tr").remove();
+                            }
+                        });
+                    }
+                };
+            _ajaxPost(_url, _oData, _func);
+        });
+    }
+    {/if}
+
+    {if condition="in_array('admin/Admin/patchRemove', $Think.session.ACCESS_LIST)"}
+    function datadel()
+    {
+        var _ids = new Array();
+        $(".admin-lists").find("input[type*=checkbox]").each(function(index, el) {
+            if( $(this).is(":checked") ){
+                var _id = $(this).val();
+                _ids.push(_id);
+            }
+        });
+        if(_ids.length == 0){
+            layer.msg("请选择要删除的数据！");
+            return false;
+        }else{
+            parent.layer.confirm('管理员删除不可逆，确认要删除吗？',function(index){
+                var _oData = {ids: _ids},
+                    _url = '{:url("admin/Admin/patchRemove")}',
+                    _func = function (_resp) {
+                        parent.layer.close(index);
+                        if (!_resp.state) {
+                            layer.msg(_resp.info);
+                        } else {
+                            layer.msg('删除成功！', {time: 500}, function(){
+                                window.location.reload();
+                            });
+                        }
+                    };
+                _ajaxPost(_url, _oData, _func);
+            });
+        }
+    }
+    {/if}
+</script>
+{/block}

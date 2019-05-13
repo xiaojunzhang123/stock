@@ -1,0 +1,189 @@
+{extend name="layouts/layout_iframe" /}
+
+{block name="title"}结算中心{/block}
+
+{block name="body"}
+<nav class="breadcrumb">
+    <i class="Hui-iconfont Hui-iconfont-home2"></i> 首页
+    <span class="c-gray en">&gt;</span> 组织架构
+    <span class="c-gray en">&gt;</span> 结算中心
+    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+        <i class="Hui-iconfont Hui-iconfont-huanyipi"></i>
+    </a>
+</nav>
+<div class="page-container">
+    <form action="" method="get">
+    <div class="text-c">
+        <input type="text" class="input-text" style="width:170px;" placeholder="登录名" name="username" value="{$search.username|default=''}">
+        <input type="text" class="input-text" style="width:170px;" placeholder="真名" name="nickname" value="{$search.nickname|default=''}">
+        <input type="text" class="input-text" style="width:170px;" placeholder="手机号" name="mobile" value="{$search.mobile|default=''}">
+        <span class="select-box" style="width:70px;height: 31px;">
+            <select class="select" name="status" size="1">
+                <option value="">状态</option>
+                <option value="0" {if condition="isset($search.status) AND $search.status heq '0'"}selected{/if}>正常</option>
+                <option value="1" {if condition="isset($search.status) AND $search.status heq '1'"}selected{/if}>禁用</option>
+            </select>
+        </span>
+        <button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont Hui-iconfont-search2"></i>搜索</button>
+    </div>
+    </form>
+    <div class="cl pd-5 bg-1 bk-gray mt-20">
+		<span class="l">
+            <!--<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius">
+                <i class="Hui-iconfont  Hui-iconfont-del3"></i> 批量删除
+            </a>-->
+            {if condition="in_array('admin/Team/createSettle', $Think.session.ACCESS_LIST)"}
+			<a class="btn btn-primary radius" href="javascript:;" onclick="admin_add('添加用户','{:url("admin/Team/createSettle")}','', '420')">
+				<i class="Hui-iconfont Hui-iconfont-add"></i> 添加用户
+            </a>
+            {/if}
+        </span>
+        <span class="r">共有数据：<strong>{$datas.total}</strong> 条</span>
+    </div>
+    <table class="table table-border table-bordered table-hover table-bg">
+        <thead>
+        <tr class="text-c">
+            <th width="25"><input type="checkbox" value="" name=""></th>
+            <th width="40">ID</th>
+            <th>登录名</th>
+            <th>真名</th>
+            <th>手机号</th>
+            <th>盈利返点（%）</th>
+            <th>建仓费返点（%）</th>
+            <th>递延费返点（%）</th>
+            <th>保证金</th>
+            <th>手续费总计</th>
+            <th>创建时间</th>
+            <th>状态</th>
+            <th width="120">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name="datas.data" id="item"}
+        <tr class="text-c admin-lists">
+            <td width="25"><input type="checkbox" value="{$item.admin_id}" name=""></td>
+            <td width="40">{$item.admin_id}</td>
+            <td>{$item.username}</td>
+            <td>{$item.nickname}</td>
+            <td>{$item.mobile}</td>
+            <td>{$item.point}</td>
+            <td>{$item.jiancang_point}</td>
+            <td>{$item.defer_point}</td>
+            <td>{$item.deposit|number_format=2}</td>
+            <td>{$item.total_fee|number_format=2}</td>
+            <td>{$item.create_at|date='Y-m-d H:i:s', ###}</td>
+            <td>
+                {if condition="$item.status.value eq 0"}
+                <span class="label label-success radius">{$item.status.text}</span>
+                {else /}
+                <span class="label label-danger radius">{$item.status.text}</span>
+                {/if}
+            </td>
+            <td class="f-14">
+                {if condition="in_array('admin/Team/modifySettle', $Think.session.ACCESS_LIST)"}
+                <input class="btn btn-success size-MINI radius" type="button" title="结算中心修改" onclick="admin_edit('结算中心修改','{:url("admin/Team/modifySettle", ['id' => $item.admin_id])}','','380')" value="修改">
+                {/if}
+                {if condition="in_array('admin/Team/settlePoint', $Think.session.ACCESS_LIST)"}
+                <input class="btn btn-primary size-MINI radius" type="button" title="返点修改" onclick="settle_point('返点修改','{:url("admin/Team/settlePoint", ['id' => $item.admin_id])}','','340');" value="返点">
+                {/if}
+                {if condition="in_array('admin/Team/recharge', $Think.session.ACCESS_LIST)"}
+                <input class="btn btn-warning size-MINI radius" type="button" title="保证金充值" onclick="admin_recharge(this,{$item.admin_id});" value="充值">
+                {/if}
+            </td>
+        </tr>
+        {/volist}
+        </tbody>
+    </table>
+    {$pages}
+</div>
+{/block}
+
+{block name="footer"}
+
+{/block}
+
+{block name="script"}
+<script>
+    /*用户-添加*/
+    {if condition="in_array('admin/Team/createSettle', $Think.session.ACCESS_LIST)"}
+    function admin_add(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+    {/if}
+
+    {if condition="in_array('admin/Team/modifySettle', $Think.session.ACCESS_LIST)"}
+    function admin_edit(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+    {/if}
+
+    {if condition="in_array('admin/Team/settlePoint', $Think.session.ACCESS_LIST)"}
+    function settle_point(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+    {/if}
+
+    {if condition="in_array('admin/Team/recharge', $Think.session.ACCESS_LIST)"}
+    function admin_recharge(_obj, _id)
+    {
+        layer.prompt({
+            title: '保证金充值',
+            formType: 0,
+        }, function(_number, _prompt){
+            layer.close(_prompt);
+            var _oData = {id : _id, number : _number},
+                _url = '{:url("admin/Team/recharge")}',
+                _loading = parent.layer.load(1),
+                _func = function (_resp) {
+                    parent.layer.close(_loading);
+                    if (!_resp.state) {
+                        layer.msg(_resp.info);
+                    } else {
+                        layer.msg('充值成功！', {time: 500}, function(){
+                            if(_resp.data && _resp.data.url){
+                                parent.window.location.href = _resp.data.url;
+                            }else{
+                                var _before = $(_obj).parents("tr").children("td:eq(6)").html(),
+                                    _before = parseFloat(_before.replace("," , "")),
+                                    _change = parseFloat(_number.replace("," , "")),
+                                    _after = _before + _change,
+                                    _after = number_format(_after);
+                                $(_obj).parents("tr").children("td:eq(6)").html(_after);
+                            }
+                        });
+                    }
+                };
+            _ajaxPost(_url, _oData, _func);
+        });
+    }
+    {/if}
+
+    /*function admin_point(_obj, _id)
+    {
+        layer.prompt({
+            title: '修改返点百分比',
+            formType: 0,
+        }, function(_number, _prompt){
+            layer.close(_prompt);
+            var _oData = {id : _id, point : _number},
+                _url = '{:url("admin/Team/rebate")}',
+                _loading = parent.layer.load(1),
+                _func = function (_resp) {
+                    parent.layer.close(_loading);
+                    if (!_resp.state) {
+                        layer.msg(_resp.info);
+                    } else {
+                        layer.msg('操作成功！', {time: 500}, function(){
+                            if(_resp.data && _resp.data.url){
+                                parent.window.location.href = _resp.data.url;
+                            }else{
+                                $(_obj).parents("tr").children("td:eq(6)").html(_number);
+                            }
+                        });
+                    }
+                };
+            _ajaxPost(_url, _oData, _func);
+        });
+    }*/
+</script>
+{/block}

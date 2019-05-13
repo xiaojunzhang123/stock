@@ -1,0 +1,163 @@
+{extend name="layouts/layout_manager" /}
+
+{block name="title"}
+经纪人
+{/block}
+
+{block name="style"}
+<link rel="stylesheet" type="text/css" href="__RESOURCE__/css/person.css">
+<style type="text/css">
+    body{
+        background: #f5f5f5;
+    }
+    .erweima_mask{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,.5);
+        left: 0;
+        top: 0;
+        padding: 200px 25%;
+        display: none;
+        z-index: 99;
+    }
+    .erweima_mask img{
+        width: 100%;
+    }
+</style>
+{/block}
+
+{block name="body"}
+<body>
+{/block}
+
+{block name="content"}
+	<div class="manager_con">
+		<header class="header_con">
+		    <a href="{:url('index/User/index')}" class="lf">
+		        <img src="__RESOURCE__/img/call_back.png">
+		    </a>
+		    <p>经纪人</p>
+		</header>
+        <div id="main">
+            <div class="index-box">
+                <a href="javascript:void(0)" class="client_profile clear_fl">
+                    <div class="lf">
+                        <p class="client_p_name">{$user.nickname|default=$user.username}</p>
+                        <p class="client_p_phone">{$user.mobile}</p>
+                    </div>
+                    <i class="earrow earrow-right rt"></i>
+                    <span class="rt share_erweima">分享二维码</span>
+                    <div class="erweima_mask">
+                        <img src="__MANAGERQRCODE__/{$user.user_id}.png" alt="">
+                    </div>
+                </a>
+
+                <a href="{:url('index/Manager/incomeLists')}" class="client_profile my_input_con clear_fl">
+                    <p class="lf my_input">{$user.income | default=0.00}</p>
+                    <i class="earrow earrow-right rt"></i>
+                    <span class="rt">我的收入</span>
+                </a>
+
+                <ul class="clear_fl manager_inpu">
+                    <li>
+                        <p class="m_key">实时收入</p>
+                        <p class="m_value">{$user.realtime_income | default=0.00}</p>
+                    </li>
+                    <li>
+                        <p class="m_key">未结收入</p>
+                        <p class="m_value">{$user.not_income | default=0.00}</p>
+                    </li>
+                    <li class="border_bottom">
+                        <p class="m_key">可转收入</p>
+                        <p class="m_value clear_fl">
+                            <span>{$user.has_one_manager.sure_income | default=0.00}</span>
+                            <a href="javascript:remove_out();" class="rt">转出</a>
+                        </p>
+                    </li>
+                    <li class="border_bottom">
+                        <p class="m_key">已转收入</p>
+                        <p class="m_value">{$user.already_income | default=0.00}</p>
+                    </li>
+                </ul>
+
+                <div class="meun-box menuBox">
+                    <div class="menu-wrap">
+                        <a href="{:url('index/Manager/children')}" style="display: block;">
+                            <div class="menu-item customer boxflex" data-index="0">
+                                <i class="icon icon-customer"></i>
+                                <span class="menu-itemTitle">直属客户</span>
+                                <span class="box_flex_1 menu-itemNum">{$user.children}人</span>
+                                <i class="earrow earrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="{:url('index/Manager/followEvening')}" style="display: block;">
+                            <div class="menu-item coverings boxflex" data-index="2">
+                                <i class="icon icon-coverings"></i>
+                                <span class="menu-itemTitle menu-cover">直属平仓</span>
+                                <span class="box_flex_1 menu-itemNum">{$user.evening}笔</span>
+                                <i class="earrow earrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="{:url('index/Manager/followPosition')}" style="display: block;">
+                            <div class="menu-item boxflex" data-index="3">
+                                <i class="icon icon-mycard"></i>
+                                <span class="menu-itemTitle menu-id">直属持仓</span>
+                                <span class="box_flex_1 menu-itemNum"></span>
+                                <span class="box_flex_1 menu-itemNum">{$user.position}笔</span>
+                                <i class="earrow earrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__incomeTip___t5txi">*实际收入以交易日结算完成后为准</div>
+            </div>
+        </div>
+	</div>
+{/block}
+
+{block name="nav"}
+{/block}
+
+{block name="script"}
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="__RESOURCE__/lib/layer/layer.js"></script>
+<script type="text/javascript">
+    $(".share_erweima").click(function(){
+        $(".erweima_mask").show();
+    });
+    $(".erweima_mask").click(function(){
+        $(this).hide();
+    });
+    $(".erweima_mask img").click(function(e){
+        e.stopPropagation();
+    });
+</script>
+<script>
+    function remove_out()
+    {
+        //询问框
+        layer.confirm('是否确认转出？', {
+            title:'提示',
+            btn: ['转出','取消'] //按钮
+        }, function(){
+            var _url = '{:url("index/manager/removeCapital")}',
+                _oData = {};
+            $ajaxCustom(_url, _oData, function(res){
+                if(res.state){
+                    layer.msg(res.info, {icon: 1});
+                    setTimeout(window.location.reload(), 2000);
+                }else{
+//                    $alert(res.info);
+                    layer.msg(res.info);
+                }
+            });
+
+
+        }, function(){
+         //取消了
+        });
+    }
+</script>
+{/block}
